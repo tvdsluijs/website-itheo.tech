@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Adding a Featured Image Filter in WooCommerce Admin Product Screen - iTheo.Tech </title>
+        <meta name="description" content="Hello folks! Today we are going to tackle an interesting problem related to WooCommerce customization. Often, while managing a WooCommerce store, you might want to filter your products based on whether they have a featured image or not. Sadly, as of the time of writing,&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/adding-a-featured-image-filter-in-woocommerce-admin-product-screen.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Adding a Featured Image Filter in WooCommerce Admin Product Screen" /><meta property="og:image" content="https://itheo.tech/media/posts/92/305fb825371509498ff17b5b5f974a94.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1078" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Hello folks! Today we are going to tackle an interesting problem related to WooCommerce customization. Often, while managing a WooCommerce store, you might want to filter your products based on whether they have a featured image or not. Sadly, as of the time of writing,&hellip;" /><meta property="og:url" content="https://itheo.tech/adding-a-featured-image-filter-in-woocommerce-admin-product-screen.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/adding-a-featured-image-filter-in-woocommerce-admin-product-screen.html"},"headline":"Adding a Featured Image Filter in WooCommerce Admin Product Screen","datePublished":"2023-07-16T09:10","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/92/305fb825371509498ff17b5b5f974a94.jpeg","height":1078,"width":1600},"description":"Hello folks! Today we are going to tackle an interesting problem related to WooCommerce customization. Often, while managing a WooCommerce store, you might want to filter your products based on whether they have a featured image or not. Sadly, as of the time of writing,&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/92/305fb825371509498ff17b5b5f974a94.jpeg"
+                            srcset="https://itheo.tech/media/posts/92/responsive/305fb825371509498ff17b5b5f974a94-xs.webp 300w ,https://itheo.tech/media/posts/92/responsive/305fb825371509498ff17b5b5f974a94-sm.webp 480w ,https://itheo.tech/media/posts/92/responsive/305fb825371509498ff17b5b5f974a94-md.webp 768w ,https://itheo.tech/media/posts/92/responsive/305fb825371509498ff17b5b5f974a94-lg.webp 1024w ,https://itheo.tech/media/posts/92/responsive/305fb825371509498ff17b5b5f974a94-xl.webp 1360w ,https://itheo.tech/media/posts/92/responsive/305fb825371509498ff17b5b5f974a94-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1078"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2023-07-16T09:10">
+                              July 16, 2023
+                        </time>
+                     </div>
+                  <h1>
+                     Adding a Featured Image Filter in WooCommerce Admin Product Screen
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <hr />
+<p>Hello folks! Today we are going to tackle an interesting problem related to WooCommerce customization. Often, while managing a WooCommerce store, you might want to filter your products based on whether they have a featured image or not. Sadly, as of the time of writing, WooCommerce doesn't provide this functionality out of the box. But, worry not. We will create a small PHP script to do exactly that.</p>
+<p>Before we dive into the code, let's understand our strategy. We'll be adding a new dropdown filter to the WooCommerce admin products screen. This filter will allow you to select products that either have a featured image or don't have one.</p>
+<p>To accomplish this, we'll use two WordPress hooks. First is <code>restrict_manage_posts</code>, which allows us to add new elements in the filters row. The second one is <code>pre_get_posts</code>, enabling us to alter the main query based on the selected filter option.</p>
+<p>Now, let's get into the code.</p>
+<pre><code class="lang-php">add_action(<span class="hljs-string">'restrict_manage_posts'</span>, <span class="hljs-string">'filter_products_by_thumbnail'</span>);<restore-line-break></code></pre>
+<p>In this line, we are hooking our function <code>filter_products_by_thumbnail</code> to <code>restrict_manage_posts</code> action. This function will add a new dropdown filter to the products screen.</p>
+<pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filter_products_by_thumbnail</span>(<span class="hljs-params"></span>) </span>{<restore-line-break>    <span class="hljs-keyword">global</span> $typenow;<restore-line-break><restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-string">'product'</span> === $typenow) {<restore-line-break>        $selected = <span class="hljs-keyword">isset</span>($_GET[<span class="hljs-string">'featured_image'</span>]) ? $_GET[<span class="hljs-string">'featured_image'</span>] : <span class="hljs-string">''</span>;<restore-line-break>        <span class="hljs-meta">?></span><restore-line-break>        <select name=<span class="hljs-string">"featured_image"</span> id=<span class="hljs-string">"featured_image"</span>><restore-line-break>            <option value=<span class="hljs-string">""</span>><span class="hljs-meta"><?php</span> _e(<span class="hljs-string">'All products'</span>, <span class="hljs-string">'woocommerce'</span>); <span class="hljs-meta">?></span></option><restore-line-break>            <option value=<span class="hljs-string">"with_thumb"</span> <span class="hljs-meta"><?php</span> <span class="hljs-keyword">echo</span> selected(<span class="hljs-string">'with_thumb'</span>, $selected); <span class="hljs-meta">?></span>><span class="hljs-meta"><?php</span> _e(<span class="hljs-string">'With featured image'</span>, <span class="hljs-string">'woocommerce'</span>); <span class="hljs-meta">?></span></option><restore-line-break>            <option value=<span class="hljs-string">"without_thumb"</span> <span class="hljs-meta"><?php</span> <span class="hljs-keyword">echo</span> selected(<span class="hljs-string">'without_thumb'</span>, $selected); <span class="hljs-meta">?></span>><span class="hljs-meta"><?php</span> _e(<span class="hljs-string">'Without featured image'</span>, <span class="hljs-string">'woocommerce'</span>); <span class="hljs-meta">?></span></option><restore-line-break>        </select><restore-line-break>        <span class="hljs-meta"><?php</span><restore-line-break>    }<restore-line-break>}<restore-line-break></code></pre>
+<p>Inside this function, we are checking if the current post type is 'product' (our WooCommerce products). If yes, we are creating a new <code>select</code> element with three options: "All products", "With featured image", and "Without featured image".</p>
+<p>The <code>selected</code> function in PHP is used to retain the selected option after the filter is applied. The <code>$_GET['featured_image']</code> gets the value of our custom filter from the URL.</p>
+<pre><code class="lang-php">add_action(<span class="hljs-string">'pre_get_posts'</span>, <span class="hljs-string">'filter_products_by_thumbnail_query'</span>);<restore-line-break></code></pre>
+<p>Now, we are hooking another function <code>filter_products_by_thumbnail_query</code> to <code>pre_get_posts</code> action. This function will modify the query based on the selected filter.</p>
+<pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filter_products_by_thumbnail_query</span>(<span class="hljs-params">$query</span>) </span>{<restore-line-break>    <span class="hljs-keyword">global</span> $pagenow;<restore-line-break>    $type = <span class="hljs-string">'product'</span>;<restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>($_GET[<span class="hljs-string">'post_type'</span>])) {<restore-line-break>        $type = $_GET[<span class="hljs-string">'post_type'</span>];<restore-line-break>    }<restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-string">'product'</span> == $type && is_admin() && $pagenow==<span class="hljs-string">'edit.php'</span> && <span class="hljs-keyword">isset</span>($_GET[<span class="hljs-string">'featured_image'</span>]) && $_GET[<span class="hljs-string">'featured_image'</span>] != <span class="hljs-string">''</span>) {<restore-line-break>        $query->query_vars[<span class="hljs-string">'meta_key'</span>] = <span class="hljs-string">'_thumbnail_id'</span>;<restore-line-break>        <span class="hljs-keyword">if</span> (<span class="hljs-string">'with_thumb'</span> == $_GET[<span class="hljs-string">'featured_image'</span>]) {<restore-line-break>            $query->query_vars[<span class="hljs-string">'meta_compare'</span>] = <span class="hljs-string">'EXISTS'</span>;<restore-line-break>        }<restore-line-break>        <span class="hljs-keyword">if</span> (<span class="hljs-string">'without_thumb'</span> == $_GET[<span class="hljs-string">'featured_image'</span>]) {<restore-line-break>            $query->query_vars[<span class="hljs-string">'meta_compare'</span>] = <span class="hljs-string">'NOT EXISTS'</span>;<restore-line-break>        }<restore-line-break>    }<restore-line-break>}<restore-line-break></code></pre>
+<p>Inside this function, we're first checking if the current screen is the admin products screen and if our custom filter is set. If yes, we adjust the query based on the selected filter. We are looking for a meta key <code>_thumbnail_id</code> which is used by WooCommerce to store the featured image. If the selected filter is 'with_thumb', we adjust the query to return only products where this meta key exists. If 'without_thumb' is selected, we adjust the query to return only products where this meta key does not exist.</p>
+<p>And voila! Now, we have our custom filter for products based on their featured image.</p>
+<p>Remember to backup your code before making any changes and always test new code in a staging environment first. Also, try to avoid making changes directly to your theme files. Use a child theme or custom plugin to add this code so you won't lose your changes when you update your theme.</p>
+<p>The whole code would be like this! You can use this together with a plugin like snippets to add php scripts to your site.</p>
+<pre><code class="lang-php">add_action(<span class="hljs-string">'restrict_manage_posts'</span>, <span class="hljs-string">'filter_products_by_thumbnail'</span>);<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filter_products_by_thumbnail</span>(<span class="hljs-params"></span>) </span>{<restore-line-break>    <span class="hljs-keyword">global</span> $typenow;<restore-line-break><restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-string">'product'</span> === $typenow) {<restore-line-break>        $selected = <span class="hljs-keyword">isset</span>($_GET[<span class="hljs-string">'featured_image'</span>]) ? $_GET[<span class="hljs-string">'featured_image'</span>] : <span class="hljs-string">''</span>;<restore-line-break>        <span class="hljs-meta">?></span><restore-line-break>        <select name=<span class="hljs-string">"featured_image"</span> id=<span class="hljs-string">"featured_image"</span>><restore-line-break>            <option value=<span class="hljs-string">""</span>><span class="hljs-meta"><?php</span> _e(<span class="hljs-string">'All products'</span>, <span class="hljs-string">'woocommerce'</span>); <span class="hljs-meta">?></span></option><restore-line-break>            <option value=<span class="hljs-string">"with_thumb"</span> <span class="hljs-meta"><?php</span> <span class="hljs-keyword">echo</span> selected(<span class="hljs-string">'with_thumb'</span>, $selected); <span class="hljs-meta">?></span>><span class="hljs-meta"><?php</span> _e(<span class="hljs-string">'With featured image'</span>, <span class="hljs-string">'woocommerce'</span>); <span class="hljs-meta">?></span></option><restore-line-break>            <option value=<span class="hljs-string">"without_thumb"</span> <span class="hljs-meta"><?php</span> <span class="hljs-keyword">echo</span> selected(<span class="hljs-string">'without_thumb'</span>, $selected); <span class="hljs-meta">?></span>><span class="hljs-meta"><?php</span> _e(<span class="hljs-string">'Without featured image'</span>, <span class="hljs-string">'woocommerce'</span>); <span class="hljs-meta">?></span></option><restore-line-break>        </select><restore-line-break>        <span class="hljs-meta"><?php</span><restore-line-break>    }<restore-line-break>}<restore-line-break><restore-line-break>add_action(<span class="hljs-string">'pre_get_posts'</span>, <span class="hljs-string">'filter_products_by_thumbnail_query'</span>);<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filter_products_by_thumbnail_query</span>(<span class="hljs-params">$query</span>) </span>{<restore-line-break>    <span class="hljs-keyword">global</span> $pagenow;<restore-line-break>    $type = <span class="hljs-string">'product'</span>;<restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>($_GET[<span class="hljs-string">'post_type'</span>])) {<restore-line-break>        $type = $_GET[<span class="hljs-string">'post_type'</span>];<restore-line-break>    }<restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-string">'product'</span> == $type && is_admin() && $pagenow==<span class="hljs-string">'edit.php'</span> && <span class="hljs-keyword">isset</span>($_GET[<span class="hljs-string">'featured_image'</span>]) && $_GET[<span class="hljs-string">'featured_image'</span>] != <span class="hljs-string">''</span>) {<restore-line-break>        $query->query_vars[<span class="hljs-string">'meta_key'</span>] = <span class="hljs-string">'_thumbnail_id'</span>;<restore-line-break>        <span class="hljs-keyword">if</span> (<span class="hljs-string">'with_thumb'</span> == $_GET[<span class="hljs-string">'featured_image'</span>]) {<restore-line-break>            $query->query_vars[<span class="hljs-string">'meta_compare'</span>] = <span class="hljs-string">'EXISTS'</span>;<restore-line-break>        }<restore-line-break>        <span class="hljs-keyword">if</span> (<span class="hljs-string">'without_thumb'</span> == $_GET[<span class="hljs-string">'featured_image'</span>]) {<restore-line-break>            $query->query_vars[<span class="hljs-string">'meta_compare'</span>] = <span class="hljs-string">'NOT EXISTS'</span>;<restore-line-break>        }<restore-line-break>    }<restore-line-break>}<restore-line-break></code></pre>
+<p>That's all for today. Stay tuned for more WooCommerce tips and tricks! Happy coding, and don't forget to donate!</p>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/harnessing-openais-gpt-4-api-with-python-poetry-and-unittest.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Harnessing OpenAI&#x27;s GPT-4 API with Python, Poetry and Unittest
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/small-first-test.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           Small first Test
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2023-04-24T08:33" class="feed__date">
+                                 April 24, 2023
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/download-space-wide-screen-images-with-python.html">
+                              Download space wide screen images with Python
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2023-04-25T05:40" class="feed__date">
+                                 April 25, 2023
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/python-image-optimization-script.html">
+                              Python Image Optimization Script
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2020-11-01T11:53" class="feed__date">
+                                 November 1, 2020
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/multiple-ezviz-camera-screens-with-vlc.html">
+                              Multiple Ezviz camera screens with VLC
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Delete unused tables in Wordpress with a plugin - iTheo.Tech </title>
+        <meta name="description" content="Managing your WordPress database effectively is crucial to ensure your website remains optimized and runs smoothly. One of the challenges that many WordPress users face is handling unused database tables. These tables might be remnants from old plugins or themes that are no longer in&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/delete-unused-tables-in-wordpress-with-a-plugin.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Delete unused tables in Wordpress with a plugin" /><meta property="og:image" content="https://itheo.tech/media/posts/99/ceb8a617b2656672bceba35124c0472f.png"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1067" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Managing your WordPress database effectively is crucial to ensure your website remains optimized and runs smoothly. One of the challenges that many WordPress users face is handling unused database tables. These tables might be remnants from old plugins or themes that are no longer in&hellip;" /><meta property="og:url" content="https://itheo.tech/delete-unused-tables-in-wordpress-with-a-plugin.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/delete-unused-tables-in-wordpress-with-a-plugin.html"},"headline":"Delete unused tables in Wordpress with a plugin","datePublished":"2023-04-30T07:03","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/99/ceb8a617b2656672bceba35124c0472f.png","height":1067,"width":1600},"description":"Managing your WordPress database effectively is crucial to ensure your website remains optimized and runs smoothly. One of the challenges that many WordPress users face is handling unused database tables. These tables might be remnants from old plugins or themes that are no longer in&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/99/ceb8a617b2656672bceba35124c0472f.png"
+                            srcset="https://itheo.tech/media/posts/99/responsive/ceb8a617b2656672bceba35124c0472f-xs.webp 300w ,https://itheo.tech/media/posts/99/responsive/ceb8a617b2656672bceba35124c0472f-sm.webp 480w ,https://itheo.tech/media/posts/99/responsive/ceb8a617b2656672bceba35124c0472f-md.webp 768w ,https://itheo.tech/media/posts/99/responsive/ceb8a617b2656672bceba35124c0472f-lg.webp 1024w ,https://itheo.tech/media/posts/99/responsive/ceb8a617b2656672bceba35124c0472f-xl.webp 1360w ,https://itheo.tech/media/posts/99/responsive/ceb8a617b2656672bceba35124c0472f-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1067"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2023-04-30T07:03">
+                              April 30, 2023
+                        </time>
+                     </div>
+                  <h1>
+                     Delete unused tables in Wordpress with a plugin
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>Managing your WordPress database effectively is crucial to ensure your website remains optimized and runs smoothly. One of the challenges that many WordPress users face is handling unused database tables. These tables might be remnants from old plugins or themes that are no longer in use, or they might have been created by plugins that didn't clean up after themselves. Over time, these unused tables can accumulate, cluttering your database and causing potential performance issues.</p>
+<p>In this blog post, we will explore a handy solution to this problem by creating a custom WordPress plugin to identify unused tables, list them, and provide options to download a backup and delete each table. We will walk you through the process of setting up the plugin, implementing the necessary functions, and adjusting the code to suit your specific WordPress installation.</p>
+<p>By the end of this post, you will have a better understanding of how to manage your WordPress database more efficiently, freeing up space and maintaining optimal performance. Whether you are a WordPress developer, website administrator, or a casual blogger, this step-by-step guide will prove valuable in managing your site's database and ensuring it remains clutter-free.</p>
+<p>Creating a WordPress plugin to identify unused tables, list them, and provide options to download a backup and delete the table is a multi-step process. Here's a script outline to help guide you through the process:</p>
+<ol>
+<li>
+<p>Create a plugin file (e.g., <code>wp-unused-table-manager.php</code>) in the <code>wp-content/plugins/</code> directory.</p>
+</li>
+<li>
+<p>Add the plugin header and necessary functions.</p>
+</li>
+</ol>
+<pre><code class="lang-php"><span class="hljs-meta"><?php</span><restore-line-break><span class="hljs-comment">/*<restore-line-break>Plugin Name: WP Unused Table Manager<restore-line-break>Description: Identifies unused tables in the database, allows for download of backups, and provides a deletion option.<restore-line-break>Version: 1.0<restore-line-break>Author: Your Name<restore-line-break>*/</span><restore-line-break><restore-line-break><span class="hljs-comment">// Register the admin menu</span><restore-line-break>add_action(<span class="hljs-string">'admin_menu'</span>, <span class="hljs-string">'unused_table_manager_menu'</span>);<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_menu</span>(<span class="hljs-params"></span>) </span>{<restore-line-break>    add_management_page(<span class="hljs-string">'Unused Table Manager'</span>, <span class="hljs-string">'Unused Table Manager'</span>, <span class="hljs-string">'manage_options'</span>, <span class="hljs-string">'wp-unused-table-manager'</span>, <span class="hljs-string">'unused_table_manager_page'</span>);<restore-line-break>}<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_page</span>(<span class="hljs-params"></span>) </span>{<restore-line-break>    <span class="hljs-comment">// Check user capabilities</span><restore-line-break>    <span class="hljs-keyword">if</span> (!current_user_can(<span class="hljs-string">'manage_options'</span>)) {<restore-line-break>        <span class="hljs-keyword">return</span>;<restore-line-break>    }<restore-line-break><restore-line-break>    <span class="hljs-comment">// Perform actions based on $_POST variables</span><restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>($_POST[<span class="hljs-string">'action'</span>])) {<restore-line-break>        <span class="hljs-comment">// Add necessary actions here</span><restore-line-break>    }<restore-line-break><restore-line-break>    <span class="hljs-comment">// Display the plugin page</span><restore-line-break>    <span class="hljs-meta">?></span><restore-line-break>    
+<div <span class="hljs-class"><span class="hljs-keyword">class</span>="<span class="hljs-title">wrap</span>"><restore-line-break>        <<span class="hljs-title">h1</span>><span class="hljs-title">Unused</span> <span class="hljs-title">Table</span> <span class="hljs-title">Manager</span></<span class="hljs-title">h1</span>><restore-line-break>        <?<span class="hljs-title">php</span> <span class="hljs-title">unused_table_manager_list_tables</span>(); ?><restore-line-break>    </<span class="hljs-title">div</span>><restore-line-break>    <?<span class="hljs-title">php</span><restore-line-break>}<restore-line-break><restore-line-break><span class="hljs-title">function</span> <span class="hljs-title">unused_table_manager_list_tables</span>() </span>{<restore-line-break>    <span class="hljs-comment">// Add necessary code (down below) to list tables</span><restore-line-break>}<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_backup_table</span>(<span class="hljs-params">$table_name</span>) </span>{<restore-line-break>    <span class="hljs-comment">// Add necessary code (down below) to backup table</span><restore-line-break>}<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_delete_table</span>(<span class="hljs-params">$table_name</span>) </span>{<restore-line-break>    <span class="hljs-comment">// Add necessary code (down below) to delete table</span><restore-line-break>}<restore-line-break><span class="hljs-meta">?></span><restore-line-break></code></pre>
+<ol>
+<li>List the tables and check if they're used by WordPress or any active plugin.</li>
+</ol>
+<pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_list_tables</span>(<span class="hljs-params"></span>) </span>{<restore-line-break>    <span class="hljs-keyword">global</span> $wpdb;<restore-line-break>    $all_tables = $wpdb->get_col(<span class="hljs-string">"SHOW TABLES"</span>);<restore-line-break>    $unused_tables = <span class="hljs-keyword">array</span>();<restore-line-break><restore-line-break>    <span class="hljs-comment">// Add necessary code to filter unused tables</span><restore-line-break><restore-line-break>    <span class="hljs-comment">// Display the unused tables</span><restore-line-break>    <span class="hljs-keyword">echo</span> <span class="hljs-string">'
+<table class="wp-list-table widefat fixed striped">'</span>;<restore-line-break>    <span class="hljs-keyword">echo</span> <span class="hljs-string">'
+<thead>
+<tr>
+<th>Table Name</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>'</span>;<restore-line-break><restore-line-break>    <span class="hljs-keyword">foreach</span> ($unused_tables <span class="hljs-keyword">as</span> $table) {<restore-line-break>        <span class="hljs-keyword">echo</span> <span class="hljs-string">'
+<tr>
+<td>'</span> . $table . <span class="hljs-string">'</td>
+<td><a href="?page=wp-unused-table-manager&action=backup&table='</span> . $table . <span class="hljs-string">'">Download Backup</a> | <a href="?page=wp-unused-table-manager&action=delete&table='</span> . $table . <span class="hljs-string">'" onclick="return confirm('Are you sure you want to delete this table?')">Delete</a></td>
+</tr>
+<p>'</span>;<restore-line-break>    }<restore-line-break><restore-line-break>    <span class="hljs-keyword">echo</span> <span class="hljs-string">'</tbody>
+</table>
+<p>'</span>;<restore-line-break>}<restore-line-break></code></pre>
+<ol>
+<li>Implement the functions for backing up and deleting tables.</li>
+</ol>
+<pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_backup_table</span>(<span class="hljs-params">$table_name</span>) </span>{<restore-line-break>    <span class="hljs-keyword">global</span> $wpdb;<restore-line-break><restore-line-break>    <span class="hljs-comment">// Get table structure</span><restore-line-break>    $table_structure = $wpdb->get_row(<span class="hljs-string">"SHOW CREATE TABLE <span class="hljs-subst">$table_name</span>"</span>, ARRAY_N);<restore-line-break>    $create_table_sql = $table_structure[<span class="hljs-number">1</span>] . <span class="hljs-string">";nn"</span>;<restore-line-break><restore-line-break>    <span class="hljs-comment">// Get table data</span><restore-line-break>    $table_data = $wpdb->get_results(<span class="hljs-string">"SELECT * FROM <span class="hljs-subst">$table_name</span>"</span>, ARRAY_A);<restore-line-break>    $insert_sql = <span class="hljs-string">''</span>;<restore-line-break><restore-line-break>    <span class="hljs-keyword">foreach</span> ($table_data <span class="hljs-keyword">as</span> $row) {<restore-line-break>        $values = array_map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$value</span>) <span class="hljs-title">use</span> (<span class="hljs-params">$wpdb</span>) </span>{<restore-line-break>            <span class="hljs-keyword">return</span> <span class="hljs-string">"'"</span> . $wpdb->_real_escape($value) . <span class="hljs-string">"'"</span>;<restore-line-break>        }, array_values($row));<restore-line-break><restore-line-break>        $insert_sql .= <span class="hljs-string">"INSERT INTO <span class="hljs-subst">$table_name</span> VALUES ("</span> . implode(<span class="hljs-string">', '</span>, $values) . <span class="hljs-string">");n"</span>;<restore-line-break>    }<restore-line-break><restore-line-break>    <span class="hljs-comment">// Combine structure and data SQL</span><restore-line-break>    $backup_sql = <span class="hljs-string">"-- Backup of table <span class="hljs-subst">$table_name</span>nn"</span> . $create_table_sql . $insert_sql;<restore-line-break><restore-line-break>    <span class="hljs-comment">// Send as a downloadable file</span><restore-line-break>    header(<span class="hljs-string">'Content-Type: application/octet-stream'</span>);<restore-line-break>    header(<span class="hljs-string">'Content-Disposition: attachment; filename="'</span> . $table_name . <span class="hljs-string">'_backup.sql"'</span>);<restore-line-break>    header(<span class="hljs-string">'Content-Length: '</span> . strlen($backup_sql));<restore-line-break>    <span class="hljs-keyword">echo</span> $backup_sql;<restore-line-break>    <span class="hljs-keyword">exit</span>;<restore-line-break>}<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_delete_table</span>(<span class="hljs-params">$table_name</span>) </span>{<restore-line-break>    <span class="hljs-keyword">global</span> $wpdb;<restore-line-break>    $wpdb->query(<span class="hljs-string">"DROP TABLE IF EXISTS <span class="hljs-subst">$table_name</span>"</span>);<restore-line-break>}<restore-line-break></code></pre>
+<p>Please note that this function creates a simple backup of the table structure and data. It does not handle advanced database features such as views, triggers, or stored procedures. For a more comprehensive backup solution, you may want to consider using a dedicated backup plugin or the built-in export functionality provided by phpMyAdmin or similar tools.</p>
+<ol>
+<li>Handle the actions based on the <code>$_POST</code> variables.</li>
+</ol>
+<pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_page</span>(<span class="hljs-params"></span>) </span>{<restore-line-break>    <span class="hljs-comment">// Check user capabilities</span><restore-line-break>    <span class="hljs-keyword">if</span> (!current_user_can(<span class="hljs-string">'manage_options'</span>)) {<restore-line-break>        <span class="hljs-keyword">return</span>;<restore-line-break>    }<restore-line-break><restore-line-break>    <span class="hljs-comment">// Perform actions based on $_POST variables</span><restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>($_POST[<span class="hljs-string">'action'</span>])) {<restore-line-break>        <span class="hljs-keyword">if</span> ($_POST[<span class="hljs-string">'action'</span>] == <span class="hljs-string">'backup'</span> && <span class="hljs-keyword">isset</span>($_POST[<span class="hljs-string">'table'</span>])) {<restore-line-break>            unused_table_manager_backup_table($_POST[<span class="hljs-string">'table'</span>]);<restore-line-break>        } <span class="hljs-keyword">elseif</span> ($_POST[<span class="hljs-string">'action'</span>] == <span class="hljs-string">'delete'</span> && <span class="hljs-keyword">isset</span>($_POST[<span class="hljs-string">'table'</span>])) {<restore-line-break>            unused_table_manager_delete_table($_POST[<span class="hljs-string">'table'</span>]);<restore-line-break>        }<restore-line-break>    }<restore-line-break><restore-line-break>    <span class="hljs-comment">// Display the plugin page</span><restore-line-break>    <span class="hljs-meta">?></span><restore-line-break>    
+<div <span class="hljs-class"><span class="hljs-keyword">class</span>="<span class="hljs-title">wrap</span>"><restore-line-break>        <<span class="hljs-title">h1</span>><span class="hljs-title">Unused</span> <span class="hljs-title">Table</span> <span class="hljs-title">Manager</span></<span class="hljs-title">h1</span>><restore-line-break>        <?<span class="hljs-title">php</span> <span class="hljs-title">unused_table_manager_list_tables</span>(); ?><restore-line-break>    </<span class="hljs-title">div</span>><restore-line-break>    <?<span class="hljs-title">php</span><restore-line-break>}</span><restore-line-break></code></pre>
+<ol>
+<li>Adjust the action handling for backup and delete actions based on <code>$_GET</code> variables.</li>
+</ol>
+<pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unused_table_manager_page</span>(<span class="hljs-params"></span>) </span>{<restore-line-break>    <span class="hljs-comment">// Check user capabilities</span><restore-line-break>    <span class="hljs-keyword">if</span> (!current_user_can(<span class="hljs-string">'manage_options'</span>)) {<restore-line-break>        <span class="hljs-keyword">return</span>;<restore-line-break>    }<restore-line-break><restore-line-break>    <span class="hljs-comment">// Perform actions based on $_GET variables</span><restore-line-break>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>($_GET[<span class="hljs-string">'action'</span>]) && <span class="hljs-keyword">isset</span>($_GET[<span class="hljs-string">'table'</span>])) {<restore-line-break>        <span class="hljs-keyword">if</span> ($_GET[<span class="hljs-string">'action'</span>] == <span class="hljs-string">'backup'</span>) {<restore-line-break>            unused_table_manager_backup_table($_GET[<span class="hljs-string">'table'</span>]);<restore-line-break>        } <span class="hljs-keyword">elseif</span> ($_GET[<span class="hljs-string">'action'</span>] == <span class="hljs-string">'delete'</span>) {<restore-line-break>            unused_table_manager_delete_table($_GET[<span class="hljs-string">'table'</span>]);<restore-line-break>        }<restore-line-break>    }<restore-line-break><restore-line-break>    <span class="hljs-comment">// Display the plugin page</span><restore-line-break>    <span class="hljs-meta">?></span><restore-line-break>    
+<div <span class="hljs-class"><span class="hljs-keyword">class</span>="<span class="hljs-title">wrap</span>"><restore-line-break>        <<span class="hljs-title">h1</span>><span class="hljs-title">Unused</span> <span class="hljs-title">Table</span> <span class="hljs-title">Manager</span></<span class="hljs-title">h1</span>><restore-line-break>        <?<span class="hljs-title">php</span> <span class="hljs-title">unused_table_manager_list_tables</span>(); ?><restore-line-break>    </<span class="hljs-title">div</span>><restore-line-break>    <?<span class="hljs-title">php</span><restore-line-break>}</span><restore-line-break></code></pre>
+<p>With this code, you have created a basic WordPress plugin that identifies unused tables in the database, lists them, and allows you to download a backup of each table and delete them individually. Please note that the code provided is a starting point and may require further customization to work seamlessly with your specific WordPress installation and to filter the unused tables effectively. Additionally, it is recommended to improve the security and error handling of the plugin for production use.</p>
+<blockquote>
+<p>Notice: before using this code, make a good complete database backup!!</p>
+</blockquote>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/enable-recaptcha-on-woocommerce-reviews.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Enable reCAPTCHA on WooCommerce Reviews
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/weerlive-api-python-script-om-weersgegevens-op-te-halen-en-te-verwerken.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           Weerlive API: Python-script om weersgegevens op te halen en te verwerken
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2015-02-05T19:42" class="feed__date">
+                                 February 5, 2015
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/url-shortener-with-php-and-mongodb-script.html">
+                              Url shortener with PHP and MongoDB script
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2015-08-11T11:52" class="feed__date">
+                                 August 11, 2015
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/better-mongodb-backup-script-with-tar-and-move-to-s3-bucket.html">
+                              Better MongoDB backup script with Tar and move to S3 Bucket
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-03-18T12:35" class="feed__date">
+                                 March 18, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/using-ubuntu-on-windows-10-without-admin-rights.html">
+                              Using Ubuntu on Windows 10 without Admin Rights
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

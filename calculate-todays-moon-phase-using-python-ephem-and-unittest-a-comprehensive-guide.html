@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Calculate Today&#x27;s Moon Phase Using Python, ephem, and unittest - A Comprehensive Guide - iTheo.Tech </title>
+        <meta name="description" content="Have you ever wondered how to calculate the moon phase for today or any specific date using Python? In this article, I will guide you through the process of fetching the moon phase using the ephem library and creating a well-structured Python project using poetry&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/calculate-todays-moon-phase-using-python-ephem-and-unittest-a-comprehensive-guide.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Calculate Today's Moon Phase Using Python, ephem, and unittest - A Comprehensive Guide" /><meta property="og:image" content="https://itheo.tech/media/posts/96/7c293c76657138172d6e536c7bed9620.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="575" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Have you ever wondered how to calculate the moon phase for today or any specific date using Python? In this article, I will guide you through the process of fetching the moon phase using the ephem library and creating a well-structured Python project using poetry&hellip;" /><meta property="og:url" content="https://itheo.tech/calculate-todays-moon-phase-using-python-ephem-and-unittest-a-comprehensive-guide.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/calculate-todays-moon-phase-using-python-ephem-and-unittest-a-comprehensive-guide.html"},"headline":"Calculate Today's Moon Phase Using Python, ephem, and unittest - A Comprehensive Guide","datePublished":"2023-05-03T18:06","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/96/7c293c76657138172d6e536c7bed9620.jpeg","height":575,"width":1600},"description":"Have you ever wondered how to calculate the moon phase for today or any specific date using Python? In this article, I will guide you through the process of fetching the moon phase using the ephem library and creating a well-structured Python project using poetry&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/96/7c293c76657138172d6e536c7bed9620.jpeg"
+                            srcset="https://itheo.tech/media/posts/96/responsive/7c293c76657138172d6e536c7bed9620-xs.webp 300w ,https://itheo.tech/media/posts/96/responsive/7c293c76657138172d6e536c7bed9620-sm.webp 480w ,https://itheo.tech/media/posts/96/responsive/7c293c76657138172d6e536c7bed9620-md.webp 768w ,https://itheo.tech/media/posts/96/responsive/7c293c76657138172d6e536c7bed9620-lg.webp 1024w ,https://itheo.tech/media/posts/96/responsive/7c293c76657138172d6e536c7bed9620-xl.webp 1360w ,https://itheo.tech/media/posts/96/responsive/7c293c76657138172d6e536c7bed9620-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="575"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2023-05-03T18:06">
+                              May 3, 2023
+                        </time>
+                     </div>
+                  <h1>
+                     Calculate Today&#x27;s Moon Phase Using Python, ephem, and unittest - A Comprehensive Guide
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>Have you ever wondered how to calculate the moon phase for today or any specific date using Python? In this article, I will guide you through the process of fetching the moon phase using the <code>ephem</code> library and creating a well-structured Python project using <code>poetry</code> for dependency management and packaging. I will also write tests for our code using the <code>unittest</code> library.</p>
+<h2 id="heading-project-setup">Project Setup</h2>
+<p>First, let's set up a new Python project using <code>poetry</code>. Follow these steps:</p>
+<ol>
+<li>Install Poetry if you haven't already:</li>
+</ol>
+<pre><code class="lang-bash">curl -sSL https://install.python-poetry.org | python3 -<restore-line-break></code></pre>
+<ol>
+<li>Create a new project and navigate to the project directory:</li>
+</ol>
+<pre><code class="lang-bash">poetry new moon_phase<restore-line-break><span class="hljs-built_in">cd</span> moon_phase<restore-line-break></code></pre>
+<ol>
+<li>Add the <code>ephem</code> library as a dependency:</li>
+</ol>
+<pre><code class="lang-bash">poetry add ephem<restore-line-break></code></pre>
+<p>Now that we have our project set up, let's dive into writing the code.</p>
+<h2 id="heading-calculating-moon-phase">Calculating Moon Phase</h2>
+<p>We'll create a function called <code>get_moon_phase()</code> in a new Python file named <code>moon_phase.py</code>. This function takes an optional date parameter; if no date is provided, it will use the current date.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> ephem<restore-line-break><span class="hljs-keyword">import</span> datetime<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_moon_phase</span>(<span class="hljs-params">date=None</span>):</span><restore-line-break>    <span class="hljs-string">"""<restore-line-break>    This function returns the moon phase for a given date.<restore-line-break>    If no date is provided, the current date is used.<restore-line-break><restore-line-break>    :param date: The date for which the moon phase is fetched.<restore-line-break>    :type date: datetime.date, optional<restore-line-break>    :return: The moon phase (0: New Moon, 0.5: First Quarter, 1.0: Full Moon)<restore-line-break>    :rtype: float<restore-line-break>    """</span><restore-line-break>    <span class="hljs-keyword">if</span> date <span class="hljs-keyword">is</span> <span class="hljs-literal">None</span>:<restore-line-break>        date = datetime.datetime.now()<restore-line-break><restore-line-break>    moon = ephem.Moon(date)<restore-line-break>    phase = moon.moon_phase<restore-line-break>    <span class="hljs-keyword">return</span> phase<restore-line-break></code></pre>
+<p>Here's a breakdown of what the code does:</p>
+<ol>
+<li>
+<p>Import the required libraries - <code>ephem</code> for moon phase calculations and <code>datetime</code> to handle dates.</p>
+</li>
+<li>
+<p>Define the <code>get_moon_phase()</code> function, which takes an optional <code>date</code> parameter.</p>
+</li>
+<li>
+<p>If no date is provided, use the current date.</p>
+</li>
+<li>
+<p>Create a <code>ephem.Moon</code> object for the given date.</p>
+</li>
+<li>
+<p>Retrieve the <code>moon_phase</code> attribute of the <code>Moon</code> object, which is a float between 0 and 1.</p>
+</li>
+<li>
+<p>Return the moon phase.</p>
+</li>
+</ol>
+<p>Now, if you want to fetch the moon phase for today, you can simply call the <code>get_moon_phase()</code> function:</p>
+<pre><code class="lang-python">moon_phase = get_moon_phase()<restore-line-break>print(<span class="hljs-string">f"Today's moon phase is: <span class="hljs-subst">{moon_phase:<span class="hljs-number">.2</span>f}</span>"</span>)<restore-line-break></code></pre>
+<h2 id="heading-writing-unit-tests">Writing Unit Tests</h2>
+<p>We'll write unit tests for our <code>get_moon_phase()</code> function using Python's built-in <code>unittest</code> library. Create a new Python file named <code>test_moon_phase.py</code> and add the following code:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> unittest<restore-line-break><span class="hljs-keyword">from</span> moon_phase <span class="hljs-keyword">import</span> get_moon_phase<restore-line-break><span class="hljs-keyword">import</span> datetime<restore-line-break><restore-line-break><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestMoonPhase</span>(<span class="hljs-params">unittest.TestCase</span>):</span><restore-line-break><restore-line-break>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_moon_phase_known_date</span>(<span class="hljs-params">self</span>):</span><restore-line-break>        <span class="hljs-comment"># Test with a known date, January 1, 2000</span><restore-line-break>        test_date = datetime.date(<span class="hljs-number">2000</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)<restore-line-break>        expected_phase = <span class="hljs-number">0.04</span>  <span class="hljs-comment"># Known moon phase for this date</span><restore-line-break>        actual_phase = get_moon_phase_phase(test_date)<restore-line-break>        self.assertAlmostEqual(expected_phase, actual_phase, places=<span class="hljs-number">2</span>)<restore-line-break>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_moon_phase_today</span>(<span class="hljs-params">self</span>):</span><restore-line-break>        <span class="hljs-comment"># Test with the current date</span><restore-line-break>        test_date = datetime.datetime.now()<restore-line-break>        actual_phase = get_moon_phase(test_date)<restore-line-break>        self.assertIsInstance(actual_phase, float)<restore-line-break>        self.assertTrue(<span class="hljs-number">0</span> <= actual_phase <= <span class="hljs-number">1</span>)<restore-line-break><restore-line-break><span class="hljs-keyword">if</span> name == <span class="hljs-string">'main'</span>:<restore-line-break>    unittest.main()<restore-line-break></code></pre>
+<p>In our test suite, we have two test cases:</p>
+<ol>
+<li>
+<p><code>test_get_moon_phase_known_date</code>: This test checks if the function returns the correct moon phase for a known date (January 1, 2000, in this case). We compare the expected moon phase with the actual moon phase returned by the function using <code>assertAlmostEqual</code> with a precision of 2 decimal places.</p>
+</li>
+<li>
+<p><code>test_get_moon_phase_today</code>: This test checks if the function returns a valid moon phase for the current date. We first assert that the returned value is a float, and then check that the value is between 0 and 1 (inclusive), as expected for a moon phase.</p>
+</li>
+</ol>
+<p>To run the tests, use <code>poetry</code>:</p>
+<pre><code class="lang-bash">poetry run python -m unittest test_moon_phase.py<restore-line-break></code></pre>
+<p>If everything is implemented correctly, all tests should pass. You can now run the <code>moon_phase.py</code> script to fetch the current moon phase using <code>poetry run python moon_phase.py</code>.</p>
+<h2 id="heading-conclusion">Conclusion</h2>
+<p>In this article, we demonstrated how to calculate the moon phase for any given date using Python and the <code>ephem</code> library. We also used <code>poetry</code> for dependency management and packaging, and wrote unit tests with Python's built-in <code>unittest</code> library.</p>
+<p>Now you have a solid foundation for expanding your project, such as creating a web application or a command-line tool to fetch the moon phase for any date. Happy coding!</p>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/analyzing-web-page-load-times-and-file-sizes-in-python.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Analyzing Web Page Load Times and File Sizes in Python
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/generate-ubl-invoices-in-python-using-poetry-and-lxml.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           Generate UBL Invoices in Python using Poetry and lxml
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2021-09-23T19:09" class="feed__date">
+                                 September 23, 2021
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/step-by-step-python-397-installation-guide-raspberry-pi.html">
+                              Step by Step Python 3.9.7 installation guide Raspberry Pi
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2021-12-06T06:01" class="feed__date">
+                                 December 6, 2021
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/raspberry-pi-update-python-guide.html">
+                              Raspberry Pi update Python Guide
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2021-12-20T10:26" class="feed__date">
+                                 December 20, 2021
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/using-hashnode-as-my-main-tech-blog-environment.html">
+                              Using Hashnode as my main Tech Blog environment.
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

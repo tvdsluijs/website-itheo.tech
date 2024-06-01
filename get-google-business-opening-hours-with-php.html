@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Get Google Business Opening hours with PHP - iTheo.Tech </title>
+        <meta name="description" content="Use your Google Business account to show your opening hours on your own site. Change your opening hours in Google Business and it will change on your site. Google My Business is a free and easy-to-use tool for businesses and organizations to manage their online&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/get-google-business-opening-hours-with-php.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Get Google Business Opening hours with PHP" /><meta property="og:image" content="https://itheo.tech/media/posts/49/npQazN3ER.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1067" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Use your Google Business account to show your opening hours on your own site. Change your opening hours in Google Business and it will change on your site. Google My Business is a free and easy-to-use tool for businesses and organizations to manage their online&hellip;" /><meta property="og:url" content="https://itheo.tech/get-google-business-opening-hours-with-php.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/get-google-business-opening-hours-with-php.html"},"headline":"Get Google Business Opening hours with PHP","datePublished":"2021-10-22T17:41","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/49/npQazN3ER.jpeg","height":1067,"width":1600},"description":"Use your Google Business account to show your opening hours on your own site. Change your opening hours in Google Business and it will change on your site. Google My Business is a free and easy-to-use tool for businesses and organizations to manage their online&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/49/npQazN3ER.jpeg"
+                            srcset="https://itheo.tech/media/posts/49/responsive/npQazN3ER-xs.webp 300w ,https://itheo.tech/media/posts/49/responsive/npQazN3ER-sm.webp 480w ,https://itheo.tech/media/posts/49/responsive/npQazN3ER-md.webp 768w ,https://itheo.tech/media/posts/49/responsive/npQazN3ER-lg.webp 1024w ,https://itheo.tech/media/posts/49/responsive/npQazN3ER-xl.webp 1360w ,https://itheo.tech/media/posts/49/responsive/npQazN3ER-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1067"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2021-10-22T17:41">
+                              October 22, 2021
+                        </time>
+                     </div>
+                  <h1>
+                     Get Google Business Opening hours with PHP
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>Use your Google Business account to show your opening hours on your own site. Change your opening hours in Google Business and it will change on your site.</p>
+<p><em><strong>Google</strong></em> My <em><strong>Business</strong></em> is a free and easy-to-use tool for <em><strong>businesses</strong></em> and organizations to manage their online presence across <em><strong>Google</strong></em>, including Search and Maps.</p>
+<p>To keep your business information on Google accurate and up to date, you can edit your Business Profile on Google. To help potential customers find and learn more about your business, you can change information like your address, hours, contact info, and photos.</p>
+<p>This information of your Business in Google Business can be used by using an API. If you want to show your opening hours on your own site you will have to use such an API.</p>
+<p>But if you know a little PHP and use my Script you can use your Google Business opening hours for your own site!</p>
+<p>If you need to change the Opening Hours, just change them in Google Business and your site will automaticly show the new Opening Hours!</p>
+<p>You can even show the Opening Hours in your Locales / Country own langauge.</p>
+<h2 id="heading-php-script-for-showing-google-business-hours">PHP Script for showing Google Business Hours.</h2>
+<pre><code class="lang-php">    <span class="hljs-meta"><?php</span><restore-line-break>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">get_business_hours</span>(<span class="hljs-params">$place_id, $key, $lang = <span class="hljs-literal">Null</span></span>) </span>{    <restore-line-break>        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">isset</span>($lang)){<restore-line-break>            $lang = get_locale();<restore-line-break>        }<restore-line-break>        $url = <span class="hljs-string">"https://maps.googleapis.com/maps/api/place/details/json?place_id=<span class="hljs-subst">{$place_id}</span>&key=<span class="hljs-subst">{$key}</span>&language=<span class="hljs-subst">{$lang}</span>"</span>;<restore-line-break><restore-line-break>        $json = file_get_contents($url);<restore-line-break>        <span class="hljs-comment"># Converts it into a PHP object</span><restore-line-break>        $data = json_decode($json, <span class="hljs-literal">true</span>);<restore-line-break><restore-line-break>        $weekday_hours = $data[<span class="hljs-string">"result"</span>][<span class="hljs-string">"opening_hours"</span>][<span class="hljs-string">"weekday_text"</span>];<restore-line-break><restore-line-break>    <span class="hljs-comment">#    $html_wh = '
+<ul class="list-group">';</span><restore-line-break>    <span class="hljs-comment">#    foreach($weekday_hours as $i => $item) {</span><restore-line-break>    <span class="hljs-comment">#        $html_wh .= "
+<li class='list-group-item'>{$item}</li>
+<p>";</span><restore-line-break>    <span class="hljs-comment">#    }</span><restore-line-break>    <span class="hljs-comment">#    $html_wh .= '</ul>
+<p>';</span><restore-line-break><restore-line-break>        $html_wh = <span class="hljs-string">""</span>;<restore-line-break>        <span class="hljs-keyword">foreach</span>($weekday_hours <span class="hljs-keyword">as</span> $i => $item) {<restore-line-break>            $day = explode(<span class="hljs-string">": "</span>, $item);<restore-line-break>            $html_wh .= <span class="hljs-string">"
+<div class="row">"</span>;<restore-line-break>            $html_wh .= <span class="hljs-string">"
+<div class="column"><span class="hljs-subst">{$day[0]}</span></div>
+<p>"</span>;<restore-line-break>            $html_wh .= <span class="hljs-string">"
+<div class="column"><span class="hljs-subst">{$day[1]}</span></div>
+<p>"</span>;<restore-line-break>            $html_wh .= <span class="hljs-string">"</div>
+<p>"</span>;<restore-line-break>        }    <restore-line-break><restore-line-break>        <span class="hljs-keyword">return</span> $html_wh;<restore-line-break>    };<restore-line-break><restore-line-break>    <span class="hljs-comment"># To get your API-Key go to:</span><restore-line-break>    <span class="hljs-comment"># https://developers.google.com/maps/documentation/javascript/get-api-key</span><restore-line-break>    $key = <span class="hljs-string">""</span>;<restore-line-break><restore-line-break>    <span class="hljs-comment"># To get your Place ID go to:</span><restore-line-break>    <span class="hljs-comment"># https://developers.google.com/maps/documentation/places/web-service/place-id</span><restore-line-break>    $place_id = <span class="hljs-string">"ChIJg_Eva1qJxEcRa3s2EXuTL7s"</span>;<restore-line-break><restore-line-break>    <span class="hljs-comment"># You can find a language list on my site.</span><restore-line-break>    $lang = <span class="hljs-string">"nl"</span>;<restore-line-break><restore-line-break>    <span class="hljs-keyword">echo</span> get_business_hours($place_id, $key, $lang);<restore-line-break></code></pre>
+<p><strong>Language List for the PHP Google Business Hours</strong></p>
+<p>'af'= 'Afrikaans'<br>'sq'= 'Albanian'<br>'ar'= 'Arabic'<br>'az'= 'Azerbaijani'<br>'eu'= 'Basque'<br>'bn'= 'Bengali'<br>'be'= 'Belarusian'<br>'bg'= 'Bulgarian'<br>'ca'= 'Catalan'<br>'zh-CN'= 'Chinese Simplified'<br>'zh-TW'= 'Chinese Traditional'<br>'hr'= 'Croatian'<br>'cs'= 'Czech'<br>'da'= 'Danish'<br>'nl'= 'Dutch'<br>'en'= 'English'<br>'eo'= 'Esperanto'<br>'et'= 'Estonian'<br>'tl'= 'Filipino'<br>'fi'= 'Finnish'<br>'fr'= 'French'<br>'gl'= 'Galician'<br>'ka'= 'Georgian'<br>'de'= 'German'<br>'el'= 'Greek'<br>'gu'= 'Gujarati'<br>'ht'= 'Haitian Creole'<br>'iw'= 'Hebrew'<br>'hi'= 'Hindi'<br>'hu'= 'Hungarian'<br>'is'= 'Icelandic'<br>'id'= 'Indonesian'<br>'ga'= 'Irish'<br>'it'= 'Italian'<br>'ja'= 'Japanese'<br>'kn'= 'Kannada'<br>'ko'= 'Korean'<br>'la'= 'Latin'<br>'lv'= 'Latvian'<br>'lt'= 'Lithuanian'<br>'mk'= 'Macedonian'<br>'ms'= 'Malay'<br>'mt'= 'Maltese'<br>'no'= 'Norwegian'<br>'fa'= 'Persian'<br>'pl'= 'Polish'<br>'pt'= 'Portuguese'<br>'ro'= 'Romanian'<br>'ru'= 'Russian'<br>'sr'= 'Serbian'<br>'sk'= 'Slovak '<br>'sl'= 'Slovenian'<br>'es'= 'Spanish'<br>'sw'= 'Swahili'<br>'sv'= 'Swedish'<br>'ta'= 'Tamil'<br>'te'= 'Telugu '<br>'th'= 'Thai'<br>'tr'= 'Turkish'<br>'uk'= 'Ukrainian'<br>'ur'= 'Urdu'<br>'vi'= 'Vietnamese'<br>'cy'= 'Welsh'<br>'yi'= 'Yiddish'</p>
+<h3 id="heading-changing-your-google-business-opening-hours">Changing your Google Business opening hours</h3>
+<p>To change your opening hours, sign in to Business Profile on Google, <strong>choose 'Info' from the menu and select 'Hours'</strong>. Use the drop-down arrows to set the 'Opens at' and 'Closes at' times for each day. To put a break in your opening hours, if you close for lunch, for example, you can create two entries for the same day.</p>
+<p>Have Fun!</p>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/installing-python-310-on-raspberry-pi.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Installing Python 3.10 on Raspberry Pi
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/im-leaving-wordpress-behind-moving-to-ghost-update.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           I&#x27;m leaving Wordpress behind, moving to Ghost [Update!]
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2015-02-05T19:42" class="feed__date">
+                                 February 5, 2015
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/url-shortener-with-php-and-mongodb-script.html">
+                              Url shortener with PHP and MongoDB script
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2015-08-11T11:52" class="feed__date">
+                                 August 11, 2015
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/better-mongodb-backup-script-with-tar-and-move-to-s3-bucket.html">
+                              Better MongoDB backup script with Tar and move to S3 Bucket
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-03-18T12:35" class="feed__date">
+                                 March 18, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/using-ubuntu-on-windows-10-without-admin-rights.html">
+                              Using Ubuntu on Windows 10 without Admin Rights
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

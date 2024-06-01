@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Zend Insert Update ON Duplicate MySQL - iTheo.Tech </title>
+        <meta name="description" content="Zend can sometimes be not so fun. Like inserting or updating when there is a duplicate in MySQL. Well I've got the solution. Zend Framework is an open-source web application framework for PHP programming language. It is mainly used to develop enterprise-level web applications. It&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/zend-insert-update-on-duplicate-mysql.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Zend Insert Update ON Duplicate MySQL" /><meta property="og:image" content="https://itheo.tech/media/posts/20/E2EFdidPw.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1067" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Zend can sometimes be not so fun. Like inserting or updating when there is a duplicate in MySQL. Well I've got the solution. Zend Framework is an open-source web application framework for PHP programming language. It is mainly used to develop enterprise-level web applications. It&hellip;" /><meta property="og:url" content="https://itheo.tech/zend-insert-update-on-duplicate-mysql.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/zend-insert-update-on-duplicate-mysql.html"},"headline":"Zend Insert Update ON Duplicate MySQL","datePublished":"2010-10-28T05:54","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/20/E2EFdidPw.jpeg","height":1067,"width":1600},"description":"Zend can sometimes be not so fun. Like inserting or updating when there is a duplicate in MySQL. Well I've got the solution. Zend Framework is an open-source web application framework for PHP programming language. It is mainly used to develop enterprise-level web applications. It&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/20/E2EFdidPw.jpeg"
+                            srcset="https://itheo.tech/media/posts/20/responsive/E2EFdidPw-xs.webp 300w ,https://itheo.tech/media/posts/20/responsive/E2EFdidPw-sm.webp 480w ,https://itheo.tech/media/posts/20/responsive/E2EFdidPw-md.webp 768w ,https://itheo.tech/media/posts/20/responsive/E2EFdidPw-lg.webp 1024w ,https://itheo.tech/media/posts/20/responsive/E2EFdidPw-xl.webp 1360w ,https://itheo.tech/media/posts/20/responsive/E2EFdidPw-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1067"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2010-10-28T05:54">
+                              October 28, 2010
+                        </time>
+                     </div>
+                  <h1>
+                     Zend Insert Update ON Duplicate MySQL
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>Zend can sometimes be not so fun. Like inserting or updating when there is a duplicate in MySQL. Well I've got the solution.</p>
+<p>Zend Framework is an open-source web application framework for PHP programming language. It is mainly used to develop enterprise-level web applications. It was developed by Andi Gutmans and Zeev Suraski in 2001, with active community involvement since then.</p>
+<p>Zend is one of the most popular PHP frameworks today. It is an open source, object-oriented framework that helps PHP developers create and maintain high-quality PHP programs and Web sites. Zend is used by many developers and it can be integrated with other frameworks and libraries to provide various easy-to-use features.</p>
+<p>Zend Framework promises to make web programming easier for developers by making it possible to build dynamic, powerful Web applications. Zend has three main components: a component library, a scripting language (PHP) and a Web server (Apache).</p>
+<p>MySQL is the most popular open-source relational database system. It can be used to store data for web applications, desktop applications, and mobile apps.</p>
+<p>MySQL is one of the most important tools for developers. It helps us store data like login information or user preferences. We can use it to create tables where we will save different types of data that can have different columns, each with its own type of data. This way we will have a more robust database solution that will allow us to interact with our application in a more efficient way.</p>
+<h2 id="heading-insert-update-on-duplicate">Insert / Update on Duplicate</h2>
+<p>Many people struggle with the Insert / Update on duplicate feature of MySQL within Zend.</p>
+<p>I also had a problem with this as the Zend does not support this in the framework .</p>
+<p>To bad, so I have written my own, Insert and Update on Duplicate function.</p>
+<p>Here it is:</p>
+<pre><code class="lang-php"><span class="hljs-meta"><?php</span><restore-line-break>    <span class="hljs-comment">/**<restore-line-break>    *   Create an Insert or Update on Duplicate statement<restore-line-break>    *   <span class="hljs-doctag">@author</span> iTheo<restore-line-break>    *   <span class="hljs-doctag">@version</span> 1<restore-line-break>    *   <span class="hljs-doctag">@since</span> 28 okt. 2010<restore-line-break>    *   <span class="hljs-doctag">@param</span> string $tableName The name of the table<restore-line-break>    *   <span class="hljs-doctag">@param</span> array $fields The Field names and data in it put in the array.<restore-line-break>    *   <span class="hljs-doctag">@param</span> string $IndexField The name of the index field  <restore-line-break>    */</span>  <restore-line-break><restore-line-break>    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">CreateInsertUpdate</span>(<span class="hljs-params">$tableName, <span class="hljs-keyword">array</span> $fields = <span class="hljs-keyword">array</span>(<span class="hljs-params"></span>),n$IndexField</span>) </span>{  <restore-line-break>        $fieldString = <span class="hljs-string">''</span>;  <restore-line-break>        <span class="hljs-keyword">print</span> _pre($fields);  <restore-line-break><restore-line-break>    <span class="hljs-keyword">if</span> (count($fields)) {  <restore-line-break>        <span class="hljs-keyword">foreach</span> ($fields <span class="hljs-keyword">as</span> $fieldKey = > $field) {  <restore-line-break>            $fieldNames[] = UniFrame_PDO::getInstance(<span class="hljs-string">'main'</span>)->quoteIdentifier($fieldKey);  <restore-line-break>            $fieldData[] = $field;<restore-line-break>            $fieldUpdate[] = UniFrame _PDO::getInstance(<span class="hljs-string">'main'</span>)->quoteIdentifier($fieldKey).<span class="hljs-string">"="</span>.$field;<restore-line-break>        }<restore-line-break>        $fieldNameString = ‘ (‘.implode(‘,’, $fieldNames).’)’;  <restore-line-break>        $fieldDataString = ‘ (‘.implode(‘,’, $fieldData).’)’;  <restore-line-break>        $fieldUpdateString = implode(‘,’, $fieldUpdate);  <restore-line-break>    }<restore-line-break><restore-line-break>    $query = <span class="hljs-string">"INSERT INTO "</span>.$tableName.$fieldNameString.<span class="hljs-string">" VALUES "</span>.$fieldDataString.  <restore-line-break>    <span class="hljs-string">" ON DUPLICATE KEY UPDATE "</span>.$IndexField.<span class="hljs-string">"=LAST_INSERT _ID("</span>.$IndexField.<span class="hljs-string">"), "</span>.$fieldUpdateString;<restore-line-break>     <span class="hljs-keyword">return</span> $query;<restore-line-break>    }<restore-line-break></code></pre>
+<p>You can even fetch the last insert id with it (even when it updates, then it returns the index id).</p>
+<p>Usage:</p>
+<pre><code class="lang-php">    <span class="hljs-meta"><?php</span><restore-line-break><restore-line-break>    $tableName = <span class="hljs-string">"contacts"</span>;  <restore-line-break>    $data = <span class="hljs-keyword">array</span>(<span class="hljs-string">'name'</span> => <span class="hljs-string">'Obama'</span>, <span class="hljs-string">'firstname'</span> => <span class="hljs-string">'teddy'</span>,  <span class="hljs-string">'age'</span> => <span class="hljs-string">'35'</span>);  <restore-line-break>    $IndexField = <span class="hljs-string">"contact_id"</span>;<restore-line-break><restore-line-break>    $query = CreateInsertUpdate($tableName, $data, $IndexField );  <restore-line-break>    $db->query($query);<restore-line-break><restore-line-break>    $id = $db->lastInsertId();<restore-line-break></code></pre>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/mongodb-aggregate-match-and-or-in-php.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           Mongodb aggregate $match, $and, $or in PHP
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2021-10-24T17:43" class="feed__date">
+                                 October 24, 2021
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/im-leaving-wordpress-behind-moving-to-ghost-update.html">
+                              I&#x27;m leaving Wordpress behind, moving to Ghost [Update!]
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2021-12-06T06:01" class="feed__date">
+                                 December 6, 2021
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/raspberry-pi-update-python-guide.html">
+                              Raspberry Pi update Python Guide
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

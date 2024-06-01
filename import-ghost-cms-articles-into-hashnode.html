@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Import Ghost CMS articles into Hashnode - iTheo.Tech </title>
+        <meta name="description" content="Importing your articles from the Ghost CMS is very easy, you can do this by using the Ghost RSS. There is only one BIG problem. The standard RSS feed only displays 15 articles. In my case this is not enough. I have 63 articles I&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/import-ghost-cms-articles-into-hashnode.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Import Ghost CMS articles into Hashnode" /><meta property="og:image" content="https://itheo.tech/media/posts/41/tcYbhwC0u.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1024" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Importing your articles from the Ghost CMS is very easy, you can do this by using the Ghost RSS. There is only one BIG problem. The standard RSS feed only displays 15 articles. In my case this is not enough. I have 63 articles I&hellip;" /><meta property="og:url" content="https://itheo.tech/import-ghost-cms-articles-into-hashnode.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/import-ghost-cms-articles-into-hashnode.html"},"headline":"Import Ghost CMS articles into Hashnode","datePublished":"2021-12-20T14:35","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/41/tcYbhwC0u.jpeg","height":1024,"width":1600},"description":"Importing your articles from the Ghost CMS is very easy, you can do this by using the Ghost RSS. There is only one BIG problem. The standard RSS feed only displays 15 articles. In my case this is not enough. I have 63 articles I&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/41/tcYbhwC0u.jpeg"
+                            srcset="https://itheo.tech/media/posts/41/responsive/tcYbhwC0u-xs.webp 300w ,https://itheo.tech/media/posts/41/responsive/tcYbhwC0u-sm.webp 480w ,https://itheo.tech/media/posts/41/responsive/tcYbhwC0u-md.webp 768w ,https://itheo.tech/media/posts/41/responsive/tcYbhwC0u-lg.webp 1024w ,https://itheo.tech/media/posts/41/responsive/tcYbhwC0u-xl.webp 1360w ,https://itheo.tech/media/posts/41/responsive/tcYbhwC0u-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1024"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2021-12-20T14:35">
+                              December 20, 2021
+                        </time>
+                     </div>
+                  <h1>
+                     Import Ghost CMS articles into Hashnode
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>Importing your articles from the Ghost CMS is very easy, you can do this by using the Ghost RSS. There is only one <strong>BIG</strong> problem. The standard RSS feed only displays 15 articles.</p>
+<p>In my case this is not enough. I have 63 articles I want to import. To solve this you have to create your own RSS feed, if you follow this article you can also import more then 15 articles.</p>
+<h2 id="heading-create-limitless-rss-feed">Create limitless RSS feed</h2>
+<p>There are a few steps you have to follow to create your own RSS feed in Ghost</p>
+<h3 id="heading-change-the-routesyaml-file">Change the routes.yaml file</h3>
+<p>First you have to download the routes.yaml file from you Ghost site by going to -> Settings -> Labs</p>
+<p><img loading="lazy" src="https://itheo.tech/media/posts/41/lGndc7IkH.png" alt="Ghost CMS Settings Labs Routes.yaml"  sizes="100vw" srcset="https://itheo.tech/media/posts/41/responsive/lGndc7IkH-xs.webp 300w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-sm.webp 480w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-md.webp 768w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-lg.webp 1024w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-xl.webp 1360w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-2xl.webp 1600w">
+Scroll down and click on the link "Download current routes.yaml".</p>
+<p>Open the Yaml file with a Texteditor like Notepad++ or Bbedit and change this line:</p>
+<p><code>routes:</code></p>
+<p>to</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">routes:</span><restore-line-break>  <span class="hljs-string">/news/rss/:</span><restore-line-break>    <span class="hljs-attr">template:</span> <span class="hljs-string">news/rss</span><restore-line-break>    <span class="hljs-attr">content_type:</span> <span class="hljs-string">text/xml</span><restore-line-break></code></pre>
+<h3 id="heading-download-the-active-ghost-theme">Download the active Ghost theme</h3>
+<p>Then download your theme from ghost by going to -> Settings -> Design</p>
+<p>And click on the left site at the bottom on "Change theme"</p>
+<p><img loading="lazy" src="https://itheo.tech/media/posts/41/L8c4NXYj_.png" alt="change theme"  sizes="100vw" srcset="https://itheo.tech/media/posts/41/responsive/L8c4NXYj_-xs.webp 300w ,https://itheo.tech/media/posts/41/responsive/L8c4NXYj_-sm.webp 480w ,https://itheo.tech/media/posts/41/responsive/L8c4NXYj_-md.webp 768w ,https://itheo.tech/media/posts/41/responsive/L8c4NXYj_-lg.webp 1024w ,https://itheo.tech/media/posts/41/responsive/L8c4NXYj_-xl.webp 1360w ,https://itheo.tech/media/posts/41/responsive/L8c4NXYj_-2xl.webp 1600w"></p>
+<p>In the next screen click on "Advanced" and behind the current active theme click on the 3 dots and then click on "Download".</p>
+<p><img loading="lazy" src="https://itheo.tech/media/posts/41/PFysd82O_.png" alt="Schermafbeelding 2021-12-20 om 14.45.20.png"  sizes="100vw" srcset="https://itheo.tech/media/posts/41/responsive/PFysd82O_-xs.webp 300w ,https://itheo.tech/media/posts/41/responsive/PFysd82O_-sm.webp 480w ,https://itheo.tech/media/posts/41/responsive/PFysd82O_-md.webp 768w ,https://itheo.tech/media/posts/41/responsive/PFysd82O_-lg.webp 1024w ,https://itheo.tech/media/posts/41/responsive/PFysd82O_-xl.webp 1360w ,https://itheo.tech/media/posts/41/responsive/PFysd82O_-2xl.webp 1600w"></p>
+<p>Unzip the theme. </p>
+<h3 id="heading-create-the-new-ghost-rrs-file">Create the new Ghost RRS file</h3>
+<p>Within the theme folder create a folder named : <code>news</code>.</p>
+<p>In this new <code>news</code> folder, add a file called <code>rss.hb</code> and add the following code in this file.</p>
+<pre><code class="lang-html"><span class="hljs-tag"><<span class="hljs-name">rss</span> <span class="hljs-attr">xmlns:dc</span>=<span class="hljs-string">"http://purl.org/dc/elements/1.1/"</span> <span class="hljs-attr">xmlns:content</span>=<span class="hljs-string">"http://purl.org/rss/1.0/modules/content/"</span> <span class="hljs-attr">xmlns:atom</span>=<span class="hljs-string">"http://www.w3.org/2005/Atom"</span> <span class="hljs-attr">xmlns:media</span>=<span class="hljs-string">"http://search.yahoo.com/mrss/"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"2.0"</span>></span><restore-line-break><span class="hljs-tag"><<span class="hljs-name">channel</span>></span><restore-line-break><span class="hljs-tag"><<span class="hljs-name">title</span>></span><![CDATA[ {{@site.title}} ]]><span class="hljs-tag"></<span class="hljs-name">title</span>></span><restore-line-break><span class="hljs-tag"><<span class="hljs-name">description</span>></span><![CDATA[ {{@site.description}} ]]><span class="hljs-tag"></<span class="hljs-name">description</span>></span><restore-line-break><span class="hljs-tag"><<span class="hljs-name">link</span>></span>{{@site.url}}<span class="hljs-tag"></<span class="hljs-name">link</span>></span><restore-line-break><span class="hljs-tag"><<span class="hljs-name">image</span>></span><restore-line-break>    <span class="hljs-tag"><<span class="hljs-name">url</span>></span>{{@site.url}}/favicon.png<span class="hljs-tag"></<span class="hljs-name">url</span>></span><restore-line-break>    <span class="hljs-tag"><<span class="hljs-name">title</span>></span>{{@site.title}}<span class="hljs-tag"></<span class="hljs-name">title</span>></span><restore-line-break>    <span class="hljs-tag"><<span class="hljs-name">link</span>></span>{{@site.url}}<span class="hljs-tag"></<span class="hljs-name">link</span>></span><restore-line-break><span class="hljs-tag"></<span class="hljs-name">image</span>></span><restore-line-break><span class="hljs-tag"><<span class="hljs-name">lastBuildDate</span>></span>{{date format="ddd, DD MMM YYYY HH:mm:ss ZZ"}}<span class="hljs-tag"></<span class="hljs-name">lastBuildDate</span>></span><restore-line-break><span class="hljs-tag"><<span class="hljs-name">atom:link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{@site.url}}"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"self"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"application/rss+xml"</span>/></span><restore-line-break><span class="hljs-tag"><<span class="hljs-name">ttl</span>></span>60<span class="hljs-tag"></<span class="hljs-name">ttl</span>></span><restore-line-break><restore-line-break>{{#get "posts" limit="all" include="authors,tags"}}<restore-line-break>    {{#foreach posts}}<restore-line-break>    <span class="hljs-tag"><<span class="hljs-name">item</span>></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">title</span>></span><![CDATA[ {{title}} ]]><span class="hljs-tag"></<span class="hljs-name">title</span>></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">description</span>></span><![CDATA[ {{excerpt}} ]]><span class="hljs-tag"></<span class="hljs-name">description</span>></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">link</span>></span>{{url absolute="true"}}<span class="hljs-tag"></<span class="hljs-name">link</span>></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">guid</span> <span class="hljs-attr">isPermaLink</span>=<span class="hljs-string">"false"</span>></span>{{id}}<span class="hljs-tag"></<span class="hljs-name">guid</span>></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">category</span>></span><![CDATA[ {{primary_tag.name}} ]]><span class="hljs-tag"></<span class="hljs-name">category</span>></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">dc:creator</span>></span><![CDATA[ {{primary_author.name}} ]]><span class="hljs-tag"></<span class="hljs-name">dc:creator</span>></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">pubDate</span>></span>{{date format="ddd, DD MMM YYYY HH:mm:ss ZZ"}}<span class="hljs-tag"></<span class="hljs-name">pubDate</span>></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">media:content</span> <span class="hljs-attr">url</span>=<span class="hljs-string">"{{feature_image}}"</span> <span class="hljs-attr">medium</span>=<span class="hljs-string">"image"</span>/></span><restore-line-break>        <span class="hljs-tag"><<span class="hljs-name">content:encoded</span>></span><![CDATA[ {{content}} ]]><span class="hljs-tag"></<span class="hljs-name">content:encoded</span>></span><restore-line-break>    <span class="hljs-tag"></<span class="hljs-name">item</span>></span><restore-line-break>    {{/foreach}}<restore-line-break>{{/get}}<restore-line-break><restore-line-break><span class="hljs-tag"></<span class="hljs-name">channel</span>></span><restore-line-break><span class="hljs-tag"></<span class="hljs-name">rss</span>></span><restore-line-break></code></pre>
+<p>Zip the complete theme folder. </p>
+<h3 id="heading-upload-the-new-ghost-theme-with-rss">Upload the new Ghost theme with RSS</h3>
+<p>And then in Ghost go to -> Settings -> Design</p>
+<p>And click on the left site at the bottom on "Change theme". In the next screen click on "Upload". Add the theme zip and upload it.</p>
+<h2 id="heading-upload-the-new-routesyaml-file">Upload the new Routes.yaml file</h2>
+<p>Now you are ready to upload the new routes.yaml file, to do this go to -> Settings -> Labs</p>
+<p><img loading="lazy" src="https://itheo.tech/media/posts/41/lGndc7IkH.png" alt="Ghost CMS Settings Labs Routes.yaml"  sizes="100vw" srcset="https://itheo.tech/media/posts/41/responsive/lGndc7IkH-xs.webp 300w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-sm.webp 480w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-md.webp 768w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-lg.webp 1024w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-xl.webp 1360w ,https://itheo.tech/media/posts/41/responsive/lGndc7IkH-2xl.webp 1600w">
+Scroll down and click on the link "Upload Routes Yaml".</p>
+<p>Choose the changes routes.yaml file and upload it.</p>
+<p>Now you have a created a new rss feed for your import.</p>
+<p>You can test the RSS by going to https://[yourdomain]/news/rss</p>
+<p>This should display all your articles.</p>
+<p>Now you are ready to import them in Hashnode.</p>
+<h2 id="heading-import-ghost-articles-into-hashnodes">Import ghost articles into Hashnodes</h2>
+<p>To import the RSS feed into Hashnode login to Hashnode and go to your Blog Dashboard.</p>
+<p>On the left side of your blog dashboard menu click on "Import".</p>
+<p><img loading="lazy" src="https://itheo.tech/media/posts/41/FLa0IlWkuJ.png" alt="Import Ghost articles into Hashnode"  sizes="100vw" srcset="https://itheo.tech/media/posts/41/responsive/FLa0IlWkuJ-xs.webp 300w ,https://itheo.tech/media/posts/41/responsive/FLa0IlWkuJ-sm.webp 480w ,https://itheo.tech/media/posts/41/responsive/FLa0IlWkuJ-md.webp 768w ,https://itheo.tech/media/posts/41/responsive/FLa0IlWkuJ-lg.webp 1024w ,https://itheo.tech/media/posts/41/responsive/FLa0IlWkuJ-xl.webp 1360w ,https://itheo.tech/media/posts/41/responsive/FLa0IlWkuJ-2xl.webp 1600w"></p>
+<p>In the import screen click on RSS Importer.</p>
+<p>In the RSS importer screen, fill in the url where the new RSS can be found, like https://[yourdomain]/news/rss</p>
+<p>And hit the "Import" Button</p>
+<p>In the next screen select the articles you want to import and choose "Import as Draft".</p>
+<p>Click next and you are done. Leave the screen open as it takes a while before the system is ready.</p>
+<h2 id="heading-last-manual-stuff-to-do">Last manual stuff to do.</h2>
+<p>To be sure that articles are okay, you will have to open every and each one of them and check them visually. Change stuff to your needs, so it will improve the article within Hashnode.</p>
+<p>Unfortunately, this tool does not import everything. For example, SEO-related matters will not be imported. You will have to fill in the SEO title and SEO description by hand (copy from the Ghost environment)</p>
+<p>And that's it! In this way you can easily transfer your articles from Ghost to your Hashnode environment.</p>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/using-hashnode-as-my-main-tech-blog-environment.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Using Hashnode as my main Tech Blog environment.
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/the-ultimate-raspberry-pi-python-setup.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           The Ultimate Raspberry Pi Python setup
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2023-04-29T06:18" class="feed__date">
+                                 April 29, 2023
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/find-articles-without-a-meta-description-with-python.html">
+                              Find articles without  a meta description with python
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2021-02-06T14:50" class="feed__date">
+                                 February 6, 2021
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/ghost-503-service-unavailable-error.html">
+                              Ghost 503 Service Unavailable error
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2021-10-24T17:43" class="feed__date">
+                                 October 24, 2021
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/im-leaving-wordpress-behind-moving-to-ghost-update.html">
+                              I&#x27;m leaving Wordpress behind, moving to Ghost [Update!]
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

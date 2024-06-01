@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Van Snake naar Pong: Creëer je Eigen Pong Game in Python met Turtle! - iTheo.Tech </title>
+        <meta name="description" content="Na het geweldige avontuur van het creëren van ons eigen Snake-spel, besloten mijn zoon en ik om nog een stap verder te gaan. Onze volgende uitdaging? Het klassieke arcade-spel, Pong. Net als Snake is Pong een van die tijdloze klassiekers die eenvoudig maar ongelooflijk verslavend&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/van-snake-naar-pong-creeer-je-eigen-pong-game-in-python-met-turtle.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Van Snake naar Pong: Creëer je Eigen Pong Game in Python met Turtle!" /><meta property="og:image" content="https://itheo.tech/media/posts/87/0fd26fc8d0f8c787a5d96026db62515e.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1067" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Na het geweldige avontuur van het creëren van ons eigen Snake-spel, besloten mijn zoon en ik om nog een stap verder te gaan. Onze volgende uitdaging? Het klassieke arcade-spel, Pong. Net als Snake is Pong een van die tijdloze klassiekers die eenvoudig maar ongelooflijk verslavend&hellip;" /><meta property="og:url" content="https://itheo.tech/van-snake-naar-pong-creeer-je-eigen-pong-game-in-python-met-turtle.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/van-snake-naar-pong-creeer-je-eigen-pong-game-in-python-met-turtle.html"},"headline":"Van Snake naar Pong: Creëer je Eigen Pong Game in Python met Turtle!","datePublished":"2023-07-27T04:20","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/87/0fd26fc8d0f8c787a5d96026db62515e.jpeg","height":1067,"width":1600},"description":"Na het geweldige avontuur van het creëren van ons eigen Snake-spel, besloten mijn zoon en ik om nog een stap verder te gaan. Onze volgende uitdaging? Het klassieke arcade-spel, Pong. Net als Snake is Pong een van die tijdloze klassiekers die eenvoudig maar ongelooflijk verslavend&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/87/0fd26fc8d0f8c787a5d96026db62515e.jpeg"
+                            srcset="https://itheo.tech/media/posts/87/responsive/0fd26fc8d0f8c787a5d96026db62515e-xs.webp 300w ,https://itheo.tech/media/posts/87/responsive/0fd26fc8d0f8c787a5d96026db62515e-sm.webp 480w ,https://itheo.tech/media/posts/87/responsive/0fd26fc8d0f8c787a5d96026db62515e-md.webp 768w ,https://itheo.tech/media/posts/87/responsive/0fd26fc8d0f8c787a5d96026db62515e-lg.webp 1024w ,https://itheo.tech/media/posts/87/responsive/0fd26fc8d0f8c787a5d96026db62515e-xl.webp 1360w ,https://itheo.tech/media/posts/87/responsive/0fd26fc8d0f8c787a5d96026db62515e-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1067"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2023-07-27T04:20">
+                              July 27, 2023
+                        </time>
+                     </div>
+                  <h1>
+                     Van Snake naar Pong: Creëer je Eigen Pong Game in Python met Turtle!
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>Na het geweldige avontuur van het creëren van ons eigen Snake-spel, besloten mijn zoon en ik om nog een stap verder te gaan. Onze volgende uitdaging? Het klassieke arcade-spel, Pong. Net als Snake is Pong een van die tijdloze klassiekers die eenvoudig maar ongelooflijk verslavend zijn. En deze keer hebben we een nieuwe Python-bibliotheek verkend: Turtle.</p>
+<p>Pong, uitgebracht door Atari in 1972, wordt vaak beschouwd als het eerste commercieel succesvolle videogame. Het spel is een simpele simulatie van tafeltennis. Spelers besturen peddels (verticale balken) die ze op en neer kunnen bewegen aan de zijkanten van het scherm om een bal terug te kaatsen. Het doel is simpel: stuiter de bal naar de tegenstander zonder dat hij hem kan terugkaatsen. Als de bal jouw kant van het scherm raakt, krijgt de tegenstander een punt.</p>
+<p>Voor dit project hebben we gebruik gemaakt van de Turtle-bibliotheek in Python. Turtle is een ingebouwde grafische module in Python. Het gebruikt een paneel en pen om beelden te creëren. Wat Turtle zo bijzonder maakt, is dat het in staat is om complexe beelden te creëren met behulp van een paar simpele bewerkingen. Dit maakt het een perfecte keuze voor het creëren van Pong.</p>
+<p>In ons Pong-spel hebben we de Turtle-bibliotheek gebruikt om de peddels en de bal te tekenen, en om ze te laten bewegen. Met slechts een paar regels code konden we de beweging van de bal en de peddels simuleren, en de bal laten stuiteren wanneer hij een peddel raakt.</p>
+<p>Het hele proces was een geweldige ervaring. Het was zowel een les in programmeervaardigheden als een reis naar de vroege dagen van videogames. Mijn zoon was enthousiast om een spel te spelen dat hij zelf had gemaakt, en ik was blij om hem nog een aspect van programmeren te leren.</p>
+<p>Programmeren is niet alleen een nuttige vaardigheid, maar kan ook een bron van plezier en creativiteit zijn. Door games zoals Snake en Pong te creëren, kunnen kinderen en volwassenen de wereld van programmeren op een leuke en interactieve manier verkennen. En wie weet, misschien is het volgende project wel een geheel nieuwe game die de wereld zal veroveren!</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> turtle<restore-line-break><restore-line-break><span class="hljs-comment"># het opzetten van het venster</span><restore-line-break>wn = turtle.Screen()<restore-line-break>wn.title(<span class="hljs-string">"Pong"</span>)<restore-line-break>wn.bgcolor(<span class="hljs-string">"black"</span>)<restore-line-break>wn.setup(width=<span class="hljs-number">600</span>, height=<span class="hljs-number">400</span>)<restore-line-break><restore-line-break><span class="hljs-comment"># opzetten van de paddle A</span><restore-line-break>paddle_a = turtle.Turtle()<restore-line-break>paddle_a.speed(<span class="hljs-number">0</span>)<restore-line-break>paddle_a.shape(<span class="hljs-string">"square"</span>)<restore-line-break>paddle_a.color(<span class="hljs-string">"white"</span>)<restore-line-break>paddle_a.shapesize(stretch_wid=<span class="hljs-number">5</span>, stretch_len=<span class="hljs-number">1</span>)<restore-line-break>paddle_a.penup()<restore-line-break>paddle_a.goto(<span class="hljs-number">-250</span>, <span class="hljs-number">0</span>)<restore-line-break><restore-line-break><span class="hljs-comment"># opzetten van de paddle B</span><restore-line-break>paddle_b = turtle.Turtle()<restore-line-break>paddle_b.speed(<span class="hljs-number">0</span>)<restore-line-break>paddle_b.shape(<span class="hljs-string">"square"</span>)<restore-line-break>paddle_b.color(<span class="hljs-string">"white"</span>)<restore-line-break>paddle_b.shapesize(stretch_wid=<span class="hljs-number">5</span>, stretch_len=<span class="hljs-number">1</span>)<restore-line-break>paddle_b.penup()<restore-line-break>paddle_b.goto(<span class="hljs-number">250</span>, <span class="hljs-number">0</span>)<restore-line-break><restore-line-break><span class="hljs-comment"># opzetten van de bal</span><restore-line-break>ball = turtle.Turtle()<restore-line-break>ball.speed(<span class="hljs-number">40</span>)<restore-line-break>ball.shape(<span class="hljs-string">"circle"</span>)<restore-line-break>ball.color(<span class="hljs-string">"white"</span>)<restore-line-break>ball.penup()<restore-line-break>ball.goto(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>)<restore-line-break>ball.dx = <span class="hljs-number">2</span><restore-line-break>ball.dy = <span class="hljs-number">-2</span><restore-line-break><restore-line-break><span class="hljs-comment"># scoreboard</span><restore-line-break>score_a = <span class="hljs-number">0</span><restore-line-break>score_b = <span class="hljs-number">0</span><restore-line-break>scoreboard = turtle.Turtle()<restore-line-break>scoreboard.speed(<span class="hljs-number">0</span>)<restore-line-break>scoreboard.color(<span class="hljs-string">"white"</span>)<restore-line-break>scoreboard.penup()<restore-line-break>scoreboard.hideturtle()<restore-line-break>scoreboard.goto(<span class="hljs-number">0</span>, <span class="hljs-number">170</span>)<restore-line-break>scoreboard.write(<span class="hljs-string">"Speler A: {}  Speler B: {}"</span>.format(score_a, score_b), align=<span class="hljs-string">"center"</span>, font=(<span class="hljs-string">"Courier"</span>, <span class="hljs-number">16</span>, <span class="hljs-string">"normal"</span>))<restore-line-break><restore-line-break><span class="hljs-comment"># bewegen van paddle A</span><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">paddle_a_up</span>():</span><restore-line-break>    y = paddle_a.ycor()<restore-line-break>    y += <span class="hljs-number">20</span><restore-line-break>    paddle_a.sety(y)<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">paddle_a_down</span>():</span><restore-line-break>    y = paddle_a.ycor()<restore-line-break>    y -= <span class="hljs-number">20</span><restore-line-break>    paddle_a.sety(y)<restore-line-break><restore-line-break><span class="hljs-comment"># bewegen van paddle B</span><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">paddle_b_up</span>():</span><restore-line-break>    y = paddle_b.ycor()<restore-line-break>    y += <span class="hljs-number">20</span><restore-line-break>    paddle_b.sety(y)<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">paddle_b_down</span>():</span><restore-line-break>    y = paddle_b.ycor()<restore-line-break>    y -= <span class="hljs-number">20</span><restore-line-break>    paddle_b.sety(y)<restore-line-break><restore-line-break><span class="hljs-comment"># toetsenbord bindings</span><restore-line-break>wn.listen()<restore-line-break>wn.onkeypress(paddle_a_up, <span class="hljs-string">"w"</span>)<restore-line-break>wn.onkeypress(paddle_a_down, <span class="hljs-string">"s"</span>)<restore-line-break>wn.onkeypress(paddle_b_up, <span class="hljs-string">"Up"</span>)<restore-line-break>wn.onkeypress(paddle_b_down, <span class="hljs-string">"Down"</span>)<restore-line-break><restore-line-break><span class="hljs-comment"># main game loop</span><restore-line-break><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<restore-line-break>    wn.update()<restore-line-break><restore-line-break>    <span class="hljs-comment"># beweeg de bal</span><restore-line-break>    ball.setx(ball.xcor() + ball.dx)<restore-line-break>    ball.sety(ball.ycor() + ball.dy)<restore-line-break><restore-line-break>    <span class="hljs-comment"># grenzen controleren</span><restore-line-break>    <span class="hljs-keyword">if</span> ball.ycor() > <span class="hljs-number">190</span> <span class="hljs-keyword">or</span> ball.ycor() < <span class="hljs-number">-190</span>:<restore-line-break>        ball.dy *= <span class="hljs-number">-1</span><restore-line-break><restore-line-break>    <span class="hljs-comment"># controleer of de bal de paddle raakt</span><restore-line-break>    <span class="hljs-keyword">if</span> ball.xcor() < <span class="hljs-number">-240</span> <span class="hljs-keyword">and</span> ball.ycor() < paddle_a.ycor() + <span class="hljs-number">50</span> <span class="hljs-keyword">and</span> ball.ycor() > paddle_a.ycor() - <span class="hljs-number">50</span>:<restore-line-break>        ball.dx *= <span class="hljs-number">-1</span><restore-line-break>        score_a += <span class="hljs-number">1</span><restore-line-break>        scoreboard.clear()<restore-line-break>        scoreboard.write(<span class="hljs-string">"Speler A: {}  Speler B: {}"</span>.format(score_a, score_b), align=<span class="hljs-string">"center"</span>, font=(<span class="hljs-string">"Courier"</span>, <span class="hljs-number">16</span>, <span class="hljs-string">"normal"</span>))<restore-line-break><restore-line-break>    <span class="hljs-keyword">if</span> ball.xcor() > <span class="hljs-number">240</span> <span class="hljs-keyword">and</span> ball.ycor() < paddle_b.ycor() + <span class="hljs-number">50</span> <span class="hljs-keyword">and</span> ball.ycor() > paddle_b.ycor() - <span class="hljs-number">50</span>:<restore-line-break>        ball.dx *= <span class="hljs-number">-1</span><restore-line-break>        score_b += <span class="hljs-number">1</span><restore-line-break>        scoreboard.clear()<restore-line-break>        scoreboard.write(<span class="hljs-string">"Speler A: {}  Speler B: {}"</span>.format(score_a, score_b), align=<span class="hljs-string">"center"</span>, font=(<span class="hljs-string">"Courier"</span>, <span class="hljs-number">16</span>, <span class="hljs-string">"normal"</span>))<restore-line-break><restore-line-break>    <span class="hljs-comment"># controleer of een speler heeft gewonnen</span><restore-line-break>    <span class="hljs-keyword">if</span> score_a == <span class="hljs-number">5</span>:<restore-line-break>        scoreboard.clear()<restore-line-break>        scoreboard.write(<span class="hljs-string">"Speler A wint!"</span>, align=<span class="hljs-string">"center"</span>, font=(<span class="hljs-string">"Courier"</span>, <span class="hljs-number">16</span>, <span class="hljs-string">"normal"</span>))<restore-line-break>        <span class="hljs-keyword">break</span><restore-line-break><restore-line-break>    <span class="hljs-keyword">if</span> score_b == <span class="hljs-number">5</span>:<restore-line-break>        scoreboard.clear()<restore-line-break>        scoreboard.write(<span class="hljs-string">"Speler B wint!"</span>, align=<span class="hljs-string">"center"</span>, font=(<span class="hljs-string">"Courier"</span>, <span class="hljs-number">16</span>, <span class="hljs-string">"normal"</span>))<restore-line-break>        <span class="hljs-keyword">break</span><restore-line-break></code></pre>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/maak-je-eigen-snake-game-in-python-met-pygame.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Maak je eigen Snake Game in Python met Pygame
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/converting-pocket-exports-to-safari-bookmarks-with-python.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           Converting Pocket Exports to Safari Bookmarks with Python
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-10-03T22:00" class="feed__date">
+                                 October 3, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/scraping-contact-data-with-python-export-to-csv.html">
+                              Scraping contact data with Python export to csv
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-11-30T23:00" class="feed__date">
+                                 November 30, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/image-resize-python-automation-script.html">
+                              Image resize python automation script
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-12-19T23:00" class="feed__date">
+                                 December 19, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/get-colors-from-images-python-script.html">
+                              Get colors from images python script
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

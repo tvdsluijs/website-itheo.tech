@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Maak je eigen Snake Game in Python met Pygame - iTheo.Tech </title>
+        <meta name="description" content="Mijn zoon speelt altijd diverse games. In deze digitale wereld waarin we leven, zijn spellen zoals Minecraft, Fortnite en Among Us nu een vast onderdeel van de jeugdcultuur. Maar mijn zoon, hij is altijd geïntrigeerd geweest door de klassiekers. En een van zijn favorieten is&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/maak-je-eigen-snake-game-in-python-met-pygame.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Maak je eigen Snake Game in Python met Pygame" /><meta property="og:image" content="https://itheo.tech/media/posts/88/fe06ed489c461e34aa6cef52d40e9faf.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1106" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Mijn zoon speelt altijd diverse games. In deze digitale wereld waarin we leven, zijn spellen zoals Minecraft, Fortnite en Among Us nu een vast onderdeel van de jeugdcultuur. Maar mijn zoon, hij is altijd geïntrigeerd geweest door de klassiekers. En een van zijn favorieten is&hellip;" /><meta property="og:url" content="https://itheo.tech/maak-je-eigen-snake-game-in-python-met-pygame.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/maak-je-eigen-snake-game-in-python-met-pygame.html"},"headline":"Maak je eigen Snake Game in Python met Pygame","datePublished":"2023-07-25T04:45","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/88/fe06ed489c461e34aa6cef52d40e9faf.jpeg","height":1106,"width":1600},"description":"Mijn zoon speelt altijd diverse games. In deze digitale wereld waarin we leven, zijn spellen zoals Minecraft, Fortnite en Among Us nu een vast onderdeel van de jeugdcultuur. Maar mijn zoon, hij is altijd geïntrigeerd geweest door de klassiekers. En een van zijn favorieten is&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/88/fe06ed489c461e34aa6cef52d40e9faf.jpeg"
+                            srcset="https://itheo.tech/media/posts/88/responsive/fe06ed489c461e34aa6cef52d40e9faf-xs.webp 300w ,https://itheo.tech/media/posts/88/responsive/fe06ed489c461e34aa6cef52d40e9faf-sm.webp 480w ,https://itheo.tech/media/posts/88/responsive/fe06ed489c461e34aa6cef52d40e9faf-md.webp 768w ,https://itheo.tech/media/posts/88/responsive/fe06ed489c461e34aa6cef52d40e9faf-lg.webp 1024w ,https://itheo.tech/media/posts/88/responsive/fe06ed489c461e34aa6cef52d40e9faf-xl.webp 1360w ,https://itheo.tech/media/posts/88/responsive/fe06ed489c461e34aa6cef52d40e9faf-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1106"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2023-07-25T04:45">
+                              July 25, 2023
+                        </time>
+                     </div>
+                  <h1>
+                     Maak je eigen Snake Game in Python met Pygame
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>Mijn zoon speelt altijd diverse games. In deze digitale wereld waarin we leven, zijn spellen zoals Minecraft, Fortnite en Among Us nu een vast onderdeel van de jeugdcultuur. Maar mijn zoon, hij is altijd geïntrigeerd geweest door de klassiekers. En een van zijn favorieten is ongetwijfeld het klassieke Snake-spel.</p>
+<p>In plaats van hem gewoon het spel te laten spelen, dacht ik: waarom maken we het niet zelf? Dus ik dook in de magische wereld van Python-programmering, en met behulp van een paar bibliotheken zoals pygame, time en random, hebben we onze eigen versie van het spel gecreëerd. Hier is ons verhaal.</p>
+<p>Python is een van de meest toegankelijke programmeertalen die er zijn. Het is gemakkelijk te leren, leesbaar en heeft een schat aan bibliotheken die het mogelijk maken om vrijwel alles te doen wat je maar kunt bedenken. Een van de dingen die Python zo geweldig maakt voor beginners en jonge programmeurs, is de mogelijkheid om interactieve spelletjes te maken.</p>
+<p>Het creëren van het Snake-spel was een spannend proces, vol met uitdagingen, maar ook vol met plezier. We gebruikten Pygame, een set van Python modules die ontworpen zijn voor het schrijven van videospellen. Pygame voegt functionaliteit bovenop de uitstekende SDL-bibliotheek door game-gerelateerde taken te automatiseren, en stelt ons in staat om spellen te maken met uitstekende graphics en geluidseffecten.</p>
+<p>De time bibliotheek is gebruikt om de controle over tijd in Python te hebben. We hebben het gebruikt om de snelheid van de slang te beheren en om het spel te vertragen wanneer nodig. Zoals de naam al doet vermoeden, stelt de random bibliotheek ons in staat om willekeurige getallen te genereren. In het Snake-spel gebruiken we dit om het voedsel voor de slang willekeurig op het scherm te plaatsen.</p>
+<p>Het was een hele leuk ervaring om samen met hem dit spel te creëren. Niet alleen was het een plezier om te zien hoe onze eigen versie van Snake tot leven kwam op het scherm, maar het was ook een geweldige manier om mijn zoon de basis van programmeren te leren. De vreugde op zijn gezicht toen hij voor het eerst de door ons gecreëerde slang zag bewegen en groeien, is onbetaalbaar.</p>
+<p>Het leren van programmeren kan een intimiderende taak zijn, maar projecten zoals deze maken het proces leuk en lonend. Mijn zoon en ik kijken al uit naar ons volgende project!</p>
+<p>In de wereld van vandaag, waar technologie in elk aspect van ons leven is doorgedrongen, is het leren van vaardigheden zoals programmeren steeds belangrijker. En als je deze vaardigheden op een leuke en interactieve manier kunt leren, zoals het maken van je eigen spel, waarom zou je dat dan niet doen?</p>
+<p>Ik hoop dat ons verhaal andere ouders en kinderen zal inspireren om het programmeren te ontdekken en hun eigen projecten te starten. Wie weet, misschien creëer je wel het volgende grote computerspel!</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pygame<restore-line-break><span class="hljs-keyword">import</span> time<restore-line-break><span class="hljs-keyword">import</span> random<restore-line-break><restore-line-break>pygame.init()<restore-line-break><restore-line-break><span class="hljs-comment"># Kleuren</span><restore-line-break>wit = (<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>)<restore-line-break>zwart = (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>)<restore-line-break>rood = (<span class="hljs-number">213</span>, <span class="hljs-number">50</span>, <span class="hljs-number">80</span>)<restore-line-break>groen = (<span class="hljs-number">0</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>)<restore-line-break>blauw = (<span class="hljs-number">50</span>, <span class="hljs-number">153</span>, <span class="hljs-number">213</span>)<restore-line-break><restore-line-break><span class="hljs-comment"># Breedte en hoogte van het scherm</span><restore-line-break>scherm_breedte = <span class="hljs-number">800</span><restore-line-break>scherm_hoogte = <span class="hljs-number">600</span><restore-line-break><restore-line-break><span class="hljs-comment"># Maak het scherm aan</span><restore-line-break>scherm = pygame.display.set_mode((scherm_breedte, scherm_hoogte))<restore-line-break>pygame.display.set_caption(<span class="hljs-string">'Snake'</span>)<restore-line-break><restore-line-break>kloksnelheid = pygame.time.Clock()<restore-line-break><restore-line-break>blok_grootte = <span class="hljs-number">10</span><restore-line-break>snelheid = <span class="hljs-number">15</span><restore-line-break><restore-line-break>font = pygame.font.SysFont(<span class="hljs-literal">None</span>, <span class="hljs-number">25</span>)<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bericht</span>(<span class="hljs-params">msg, kleur</span>):</span><restore-line-break>    tekst = font.render(msg, <span class="hljs-literal">True</span>, kleur)<restore-line-break>    scherm.blit(tekst, [scherm_breedte / <span class="hljs-number">6</span>, scherm_hoogte / <span class="hljs-number">3</span>])<restore-line-break><restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">snake</span>(<span class="hljs-params">blok_grootte, lijst</span>):</span><restore-line-break>    <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> lijst:<restore-line-break>        pygame.draw.rect(scherm, groen, [x[<span class="hljs-number">0</span>], x[<span class="hljs-number">1</span>], blok_grootte, blok_grootte])<restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">gameLoop</span>():</span><restore-line-break>    game_over = <span class="hljs-literal">False</span><restore-line-break>    game_sluit = <span class="hljs-literal">False</span><restore-line-break><restore-line-break>    <span class="hljs-comment"># Startpositie van de slang</span><restore-line-break>    x1 = scherm_breedte / <span class="hljs-number">2</span><restore-line-break>    y1 = scherm_hoogte / <span class="hljs-number">2</span><restore-line-break><restore-line-break>    <span class="hljs-comment"># Verandering van positie</span><restore-line-break>    x1_verandering = <span class="hljs-number">0</span><restore-line-break>    y1_verandering = <span class="hljs-number">0</span><restore-line-break><restore-line-break>    <span class="hljs-comment"># Lijst met alle blokken van de slang</span><restore-line-break>    slang_lijst = []<restore-line-break>    lengte_van_slang = <span class="hljs-number">1</span><restore-line-break><restore-line-break>    <span class="hljs-comment"># Startpositie van het voedsel</span><restore-line-break>    voedsel_x = round(random.randrange(<span class="hljs-number">0</span>, scherm_breedte - blok_grootte) / <span class="hljs-number">10.0</span>) * <span class="hljs-number">10.0</span><restore-line-break>    voedsel_y = round(random.randrange(<span class="hljs-number">0</span>, scherm_hoogte - blok_grootte) / <span class="hljs-number">10.0</span>) * <span class="hljs-number">10.0</span><restore-line-break><restore-line-break>    <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> game_over:<restore-line-break><restore-line-break>        <span class="hljs-keyword">while</span> game_sluit == <span class="hljs-literal">True</span>:<restore-line-break>            scherm.fill(zwart)<restore-line-break>            bericht(<span class="hljs-string">"Je hebt verloren! Druk Q om af te sluiten of C om opnieuw te spelen"</span>, rood)<restore-line-break>            pygame.display.update()<restore-line-break><restore-line-break>            <span class="hljs-keyword">for</span> event <span class="hljs-keyword">in</span> pygame.event.get():<restore-line-break>                <span class="hljs-keyword">if</span> event.type == pygame.KEYDOWN:<restore-line-break>                    <span class="hljs-keyword">if</span> event.key == pygame.K_q:<restore-line-break>                        game_over = <span class="hljs-literal">True</span><restore-line-break>                        game_sluit = <span class="hljs-literal">False</span><restore-line-break>                    <span class="hljs-keyword">if</span> event.key == pygame.K_c:<restore-line-break>                        gameLoop()<restore-line-break><restore-line-break>        <span class="hljs-keyword">for</span> event <span class="hljs-keyword">in</span> pygame.event.get():<restore-line-break>            <span class="hljs-keyword">if</span> event.type == pygame.QUIT:<restore-line-break>                game_over = <span class="hljs-literal">True</span><restore-line-break>            <span class="hljs-keyword">if</span> event.type == pygame.KEYDOWN:<restore-line-break>                <span class="hljs-keyword">if</span> event.key == pygame.K_LEFT:<restore-line-break>                    x1_verandering = -blok_grootte<restore-line-break>                    y1_verandering = <span class="hljs-number">0</span><restore-line-break>                <span class="hljs-keyword">elif</span> event.key == pygame.K_RIGHT:<restore-line-break>                    x1_verandering = blok_grootte<restore-line-break>                    y1_verandering = <span class="hljs-number">0</span><restore-line-break>                <span class="hljs-keyword">elif</span> event.key == pygame.K_UP:<restore-line-break>                    y1_verandering = -blok_grootte<restore-line-break>                    x1_verandering = <span class="hljs-number">0</span><restore-line-break>                <span class="hljs-keyword">elif</span> event.key == pygame.K_DOWN:<restore-line-break>                    y1_verandering = blok_grootte<restore-line-break>                    x1_verandering = <span class="hljs-number">0</span><restore-line-break><restore-line-break>        <span class="hljs-comment"># Controleer of de slang buiten het scherm gaat</span><restore-line-break>        <span class="hljs-keyword">if</span> x1 >= scherm_breedte <span class="hljs-keyword">or</span> x1 < <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> y1 >= scherm_hoogte <span class="hljs-keyword">or</span> y1 < <span class="hljs-number">0</span>:<restore-line-break>            game_sluit = <span class="hljs-literal">True</span><restore-line-break><restore-line-break>        <span class="hljs-comment"># Update de positie van de slang</span><restore-line-break>        x1 += x1_verandering<restore-line-break>        y1 += y1_verandering<restore-line-break><restore-line-break>        scherm.fill(zwart)<restore-line-break>        pygame.draw.rect(scherm, rood, [voedsel_x, voedsel_y, blok_grootte, blok_grootte])<restore-line-break><restore-line-break>        slang_kop = []<restore-line-break>        slang_kop.append(x1)<restore-line-break>        slang_kop.append(y1)<restore-line-break>        slang_lijst.append(slang_kop)<restore-line-break><restore-line-break>        <span class="hljs-comment"># Verwijder de oudste blok als de lengte van de slang groter is dan de opgegeven lengte</span><restore-line-break>        <span class="hljs-keyword">if</span> len(slang_lijst) > lengte_van_slang:<restore-line-break>            <span class="hljs-keyword">del</span> slang_lijst[<span class="hljs-number">0</span>]<restore-line-break><restore-line-break>        <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> slang_lijst[:<span class="hljs-number">-1</span>]:<restore-line-break>            <span class="hljs-keyword">if</span> x == slang_kop:<restore-line-break>                game_sluit = <span class="hljs-literal">True</span><restore-line-break><restore-line-break>        snake(blok_grootte, slang_lijst)<restore-line-break>        pygame.display.update()<restore-line-break><restore-line-break>        <span class="hljs-comment"># Controleer of de slang het voedsel heeft gegeten</span><restore-line-break>        <span class="hljs-keyword">if</span> x1 == voedsel_x <span class="hljs-keyword">and</span> y1 == voedsel_y:<restore-line-break>            voedsel_x = round(random.randrange(<span class="hljs-number">0</span>, scherm_breedte - blok_grootte) / <span class="hljs-number">10.0</span>) * <span class="hljs-number">10.0</span><restore-line-break>            voedsel_y = round(random.randrange(<span class="hljs-number">0</span>, scherm_hoogte - blok_grootte) / <span class="hljs-number">10.0</span>) * <span class="hljs-number">10.0</span><restore-line-break>            lengte_van_slang += <span class="hljs-number">1</span><restore-line-break><restore-line-break>        kloksnelheid.tick(snelheid)<restore-line-break><restore-line-break>    pygame.quit()<restore-line-break>    quit()<restore-line-break><restore-line-break>gameLoop()<restore-line-break></code></pre>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/solving-default-featured-image-issue-in-wordpress-posts-and-articles.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Solving Default Featured Image Issue in WordPress posts and articles
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/van-snake-naar-pong-creeer-je-eigen-pong-game-in-python-met-turtle.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           Van Snake naar Pong: Creëer je Eigen Pong Game in Python met Turtle!
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-10-03T22:00" class="feed__date">
+                                 October 3, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/scraping-contact-data-with-python-export-to-csv.html">
+                              Scraping contact data with Python export to csv
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-11-30T23:00" class="feed__date">
+                                 November 30, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/image-resize-python-automation-script.html">
+                              Image resize python automation script
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-12-19T23:00" class="feed__date">
+                                 December 19, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/get-colors-from-images-python-script.html">
+                              Get colors from images python script
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

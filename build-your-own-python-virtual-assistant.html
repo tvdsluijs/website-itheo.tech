@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Build your own Python virtual assistant - iTheo.Tech </title>
+        <meta name="description" content="Note: this explanation is mainly aimed at users on a Mac or Linux System. When there are questions about windows I will do my very best to help, but because I no longer have a windows system at home (hooray!) It is a bit more&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/build-your-own-python-virtual-assistant.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Build your own Python virtual assistant" /><meta property="og:image" content="https://itheo.tech/media/posts/55/LguR8PY4r.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1067" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="Note: this explanation is mainly aimed at users on a Mac or Linux System. When there are questions about windows I will do my very best to help, but because I no longer have a windows system at home (hooray!) It is a bit more&hellip;" /><meta property="og:url" content="https://itheo.tech/build-your-own-python-virtual-assistant.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/build-your-own-python-virtual-assistant.html"},"headline":"Build your own Python virtual assistant","datePublished":"2021-02-07T15:21","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/55/LguR8PY4r.jpeg","height":1067,"width":1600},"description":"Note: this explanation is mainly aimed at users on a Mac or Linux System. When there are questions about windows I will do my very best to help, but because I no longer have a windows system at home (hooray!) It is a bit more&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/55/LguR8PY4r.jpeg"
+                            srcset="https://itheo.tech/media/posts/55/responsive/LguR8PY4r-xs.webp 300w ,https://itheo.tech/media/posts/55/responsive/LguR8PY4r-sm.webp 480w ,https://itheo.tech/media/posts/55/responsive/LguR8PY4r-md.webp 768w ,https://itheo.tech/media/posts/55/responsive/LguR8PY4r-lg.webp 1024w ,https://itheo.tech/media/posts/55/responsive/LguR8PY4r-xl.webp 1360w ,https://itheo.tech/media/posts/55/responsive/LguR8PY4r-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1067"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2021-02-07T15:21">
+                              February 7, 2021
+                        </time>
+                     </div>
+                  <h1>
+                     Build your own Python virtual assistant
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>Note: this explanation is mainly aimed at users on a Mac or Linux System. When there are questions about windows I will do my very best to help, but because I no longer have a windows system at home (hooray!) It is a bit more difficult for me to help. I hope you understand this!</p>
+<blockquote>
+<p>Build your own Python Virtual Assistant within minutes!</p>
+</blockquote>
+<p>I love Virtual Assistants, I used to use the Google Assistant and it was a great experience, never really liked Siri because it’s to Vendor specific and recently I’ve started to use the Amazon Virtual Assistant “Alexa” more and more.</p>
+<p>Unfortunately not all Echo devices are sold in the Netherlands but I like it so much that I used an extra shipping service outside of Amazon for shipping my Echo Devices purchases from Germany to the Netherlands.</p>
+<p>For this small tutorial to build your own Virtual Assistant it does not really matter what Virtual Assistant you like most, as you are going to Build your Own!</p>
+<h2 id="heading-python-virtual-assistant-prerequisites">Python virtual assistant prerequisites</h2>
+<p>So, as mentioned above this tutorial focuses on Linux and Mac, but still you can use it on any windows machine.</p>
+<p>For this to work you need PortAudio on your machine. PortAudio is an open-source computer library for audio playback and recording. It is a cross-platform library, so programs using it can run on many different computer operating systems, including Windows, Mac OS X and Linux.</p>
+<p>We are going to use brew to install PortAudio. Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple’s macOS operating system and Linux.</p>
+<p>Open a terminal and do:</p>
+<pre><code class="lang-bash">brew remove portaudio<restore-line-break>brew install portaudio<restore-line-break></code></pre>
+<p>Yes, I first remove PortAudio. Somehow when working on older versions of PortAudio it does not update as it should be. You might not have any trouble when just installing it, but well it does no harm to first uninstall it.</p>
+<p>When I develop my Python scripts I always do this in virtual environments or venv. A venv (virtual environment) is a <strong>Python environment</strong> such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system.</p>
+<p>The benefit of this is that your main system stays clean and you can create a venv per project so you can “lift and shift” it to another system where you can easily create the same sandboxed environment.</p>
+<blockquote>
+<p>Trust me, you want to use Python environments!</p>
+</blockquote>
+<p>If you want to create a venv in VS Code, just type this in the VS Code terminal:</p>
+<pre><code class="lang-bash">python -m venv .venv<restore-line-break></code></pre>
+<p>For this little script we are using 3 python libraries:</p>
+<p><strong>SpeechRecognition</strong> is a library for performing speech recognition, with support for several engines and APIs, online and offline.</p>
+<p><strong>PyAudio</strong> provides Python bindings for PortAudio, the cross-platform audio I/O library. With PyAudio, you can easily use Python to play and record audio on a variety of platforms, such as GNU/Linux, Microsoft Windows, and Apple Mac OS X / macOS.</p>
+<p><strong>Pyttsx3</strong> is a text-to-speech conversion library in Python. Unlike alternative libraries, it works offline, and is compatible with Python 3.</p>
+<p>When you are in your environment, or not if you don’t want to use Python environments, open a terminal and run:</p>
+<pre><code class="lang-bash">pip install speechrecognition<restore-line-break>pip install pyaudio<restore-line-break>pip install pyttsx3<restore-line-break></code></pre>
+<h2 id="heading-prep-a-virtual-assistent-voice">Prep a Virtual Assistent voice</h2>
+<p>On mac and windows (I’m not sure about Linux) there are a variety of installed out of the box voices you can choose from that will speak to you as a VA (Virtual Assistent).</p>
+<p>To listen to these voices and pick one try this Python code.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># pip install pyttsx3</span><restore-line-break><restore-line-break><span class="hljs-keyword">import</span> pyttsx3<restore-line-break><restore-line-break><span class="hljs-comment"># known languages: 'en_US', 'it_IT', 'sv_SE', 'fr_CA', 'de_DE', 'en_US', 'he_IL', 'id_ID', 'en_GB', 'es_AR', 'nl_BE', 'en-scotland', 'en_US', 'ro_RO', 'pt_PT', 'es_ES', 'es_MX', 'th_TH', 'en_AU', 'ja_JP', 'sk_SK', 'hi_IN', 'it_IT', 'pt_BR', 'ar_SA', 'hu_HU', 'zh_TW', 'el_GR', 'ru_RU', 'en_IE', 'es_ES', 'nb_NO', 'es_MX', 'en_IN', 'en_US', 'da_DK', 'fi_FI', 'zh_HK', 'en_ZA', 'fr_FR', 'zh_CN', 'en_IN', 'en_US', 'nl_NL', 'tr_TR', 'ko_KR', 'ru_RU', 'pl_PL', 'cs_CZ'</span><restore-line-break><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">voices</span>():</span><restore-line-break>    engine = pyttsx3.init()<restore-line-break>    voices = engine.getProperty(<span class="hljs-string">'voices'</span>)<restore-line-break><restore-line-break>    <span class="hljs-comment"># only the languages I like to hear</span><restore-line-break>    my_langs = [<span class="hljs-string">'en_US'</span>, <span class="hljs-string">'en_GB'</span>, <span class="hljs-string">'en-scotland'</span>, <span class="hljs-string">'nl_BE'</span>, <span class="hljs-string">'nl_NL'</span>]<restore-line-break><restore-line-break>    <span class="hljs-keyword">for</span> voice <span class="hljs-keyword">in</span> voices:<restore-line-break>        <span class="hljs-keyword">if</span> voice.languages[<span class="hljs-number">0</span>] <span class="hljs-keyword">in</span> my_langs:<restore-line-break>            print(voice)<restore-line-break>            engine.setProperty(<span class="hljs-string">'voice'</span>, voice.id)  <span class="hljs-comment"># changes the voice</span><restore-line-break>            engine.say(<span class="hljs-string">'The quick brown fox jumped over the lazy dog.'</span>)<restore-line-break>            engine.runAndWait()<restore-line-break><restore-line-break>voices()<restore-line-break></code></pre>
+<p>This small script will say “The Quick brown fox jumped over the lazy dog.”.</p>
+<p>The script will also print out this for each voice.</p>
+<pre><code><span class="hljs-operator"><</span>Voice id<span class="hljs-operator">=</span>com.apple.speech.synthesis.voice.Alex<restore-line-break>          name<span class="hljs-operator">=</span>Alex<restore-line-break>          languages<span class="hljs-operator">=</span>[<span class="hljs-string">'en_US'</span>]<restore-line-break>          gender<span class="hljs-operator">=</span>VoiceGenderMale<restore-line-break>          age<span class="hljs-operator">=</span><span class="hljs-number">35</span><span class="hljs-operator">></span><restore-line-break></code></pre>
+<p>The ID part is the important part. You will need it later! Copy it for later usage.</p>
+<p>Done!</p>
+<p>Well with all the preparations, now we can start writing code.</p>
+<h2 id="heading-coding-a-python-virtual-assistant">Coding a Python virtual assistant</h2>
+<p>We can now start coding the Virtual assistant.</p>
+<p>First we start with importing some stuff you need for this python Virtual assistant.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> sys<restore-line-break><restore-line-break><span class="hljs-keyword">import</span> speech_recognition <span class="hljs-keyword">as</span> sr<restore-line-break><span class="hljs-keyword">import</span> pyttsx3<restore-line-break></code></pre>
+<p>You could leave the sys import out. But I wanted to say shutdown and exit the program. The other two are to listen and convert speech to text and to actually talk to you.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># Initialize the recognizer</span><restore-line-break>r = sr.Recognizer()<restore-line-break></code></pre>
+<p>Here is where we start up the speech recognizer.</p>
+<p>I’ve created a class to put all the logic into. I think working with classes is easier than just the usage of def’s. So my class starts with <code>class SpeakToMe:</code> at the end you call the class with</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:<restore-line-break>    <span class="hljs-comment">#call the class </span><restore-line-break>    stm = SpeakToMe()<restore-line-break><restore-line-break>    <span class="hljs-comment"># start python to listnen to you!</span><restore-line-break>    stm.listen_to_me()<restore-line-break></code></pre>
+<p>You first call the class and with <code>listen_to_me()</code> part of the class you start the listening and assisting part.</p>
+<p>In the first part of the class I just add some information to work with.</p>
+<p>The voice ID, you picked with the code in the preparation part, I picked AVA:</p>
+<p><code>self.voice_id = 'com.apple.speech.synthesis.voice.ava.premium'</code></p>
+<p>The driver name, in my case on my Mac nsss:</p>
+<p><code>self.driver_name = 'nsss'</code></p>
+<p>The language you will talk in:</p>
+<p><code>self.speech_lang = 'en_US'</code></p>
+<p>The self. in the class tells it that it will be callable throughout the whole class.</p>
+<p>Then there are 3 functions.</p>
+<p>There is <code>SpeakText</code> this is the actual talking to you function. The importan argument in this function is <code>my_command</code>. If you do a</p>
+<pre><code class="lang-python">self.SpeakText(my_command = <span class="hljs-string">"The quick brown fox"</span>)<restore-line-break></code></pre>
+<p>It will actually say “The quick brown fox” to you.</p>
+<p>Then the next important function is the listener function called <code>listen_to_me</code> this function has a <code>while(True):</code> part that will keep listening to you until you break the program or until you shut it down. When you speak this function translates your spoken words to text. This text is later used to let the program understand what action it should take. So this Python script is not really smart. So you could say : “Please remind me tomorrow to get some cake for my birthday at 2 O’clock” trust me, that will not work.</p>
+<p>This script is for a 0.1 assistant. Not very bright. So use single word phrases like: “Weather” or “Hello” or “Shutdown”.</p>
+<p>Sure, you can make it more and more smart, but here it’s just a very basic Virtual assistant.</p>
+<p>Least but not last the most important function! The <code>yes_minion</code> function. This is where the real action takes place! Here it converts your word (in text) to an action.</p>
+<p>So if you want to let the program react to a word (or words) you can create small actions within this function to do something for you, like:</p>
+<pre><code class="lang-python">        system_call = [<span class="hljs-string">'hello'</span>, <span class="hljs-string">'hallo'</span>]<restore-line-break>        <span class="hljs-keyword">if</span> my_command <span class="hljs-keyword">in</span> system_call:<restore-line-break>            sorry = <span class="hljs-string">"Yes Sir?"</span><restore-line-break>            self.SpeakText(sorry, voice_id=self.voice_id,<restore-line-break>                           driver_name=self.driver_name)<restore-line-break>            <span class="hljs-keyword">return</span><restore-line-break></code></pre>
+<p>This small code reacts to your “hello” or (in dutch) ‘hallo’ and will say “Yes Sir?”. This seems very easy, but again this is just a simple example of what it can do.</p>
+<h3 id="heading-complete-python-virtual-assistant-code">Complete Python virtual assistant code</h3>
+<p>And now, for the whole code!</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> sys<restore-line-break><span class="hljs-keyword">import</span> speech_recognition <span class="hljs-keyword">as</span> sr<restore-line-break><span class="hljs-keyword">import</span> pyttsx3<restore-line-break><restore-line-break><span class="hljs-comment"># Initialize the recognizer</span><restore-line-break>r = sr.Recognizer()<restore-line-break><restore-line-break><restore-line-break><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SpeakToMe</span>:</span><restore-line-break>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self</span>) -> <span class="hljs-keyword">None</span>:</span><restore-line-break>        self.voice_id = <span class="hljs-string">'com.apple.speech.synthesis.voice.ava.premium'</span><restore-line-break>        self.driver_name = <span class="hljs-string">'nsss'</span><restore-line-break>        self.speech_lang = <span class="hljs-string">'en_US'</span><restore-line-break><restore-line-break><span class="hljs-meta">    @staticmethod</span><restore-line-break>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">SpeakText</span>(<span class="hljs-params">my_command: str = None, driver_name: str = <span class="hljs-string">'nsss'</span>,<restore-line-break>                  voice_id: str = <span class="hljs-string">'com.apple.speech.synthesis.voice.ava.premium'</span></span>):</span><restore-line-break>        <span class="hljs-keyword">try</span>:<restore-line-break>            <span class="hljs-comment"># Initialize the engine</span><restore-line-break>            <span class="hljs-keyword">if</span> my_command <span class="hljs-keyword">is</span> <span class="hljs-literal">None</span>:<restore-line-break>                <span class="hljs-keyword">return</span><restore-line-break>            engine = pyttsx3.init(driverName=driver_name)<restore-line-break>            engine.setProperty(<span class="hljs-string">'voice'</span>, voice_id)<restore-line-break>            engine.say(my_command)<restore-line-break>            engine.runAndWait()<restore-line-break>        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<restore-line-break>            print(e)<restore-line-break><restore-line-break>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">listen_to_me</span>(<span class="hljs-params">self</span>):</span><restore-line-break><restore-line-break>        text = <span class="hljs-string">"Good day sir, let me initialize and start some shit up!"</span><restore-line-break>        self.SpeakText(text, voice_id=self.voice_id,<restore-line-break>                       driver_name=self.driver_name)<restore-line-break><restore-line-break>        <span class="hljs-comment"># Loop infinitely for user to</span><restore-line-break>        <span class="hljs-comment"># speak</span><restore-line-break>        <span class="hljs-keyword">while</span>(<span class="hljs-literal">True</span>):<restore-line-break>            <span class="hljs-keyword">try</span>:<restore-line-break><restore-line-break>                <span class="hljs-comment"># use the microphone as source for input.</span><restore-line-break>                <span class="hljs-keyword">with</span> sr.Microphone() <span class="hljs-keyword">as</span> source:<restore-line-break>                    <span class="hljs-comment"># wait for a second to let the recognizer</span><restore-line-break>                    <span class="hljs-comment"># adjust the energy threshold based on</span><restore-line-break>                    <span class="hljs-comment"># the surrounding noise level</span><restore-line-break>                    r.adjust_for_ambient_noise(source, duration=<span class="hljs-number">0.2</span>)<restore-line-break><restore-line-break>                    <span class="hljs-comment"># listens for the user's input</span><restore-line-break>                    audio = r.listen(source)<restore-line-break><restore-line-break>                    <span class="hljs-comment"># Using google to recognize audio</span><restore-line-break>                    my_text = r.recognize_google(<restore-line-break>                        audio, language=self.speech_lang)<restore-line-break>                    my_text = my_text.lower()<restore-line-break><restore-line-break>                    self.yes_minion(my_command=my_text)<restore-line-break><restore-line-break>                    my_text = <span class="hljs-string">""</span><restore-line-break><restore-line-break>            <span class="hljs-keyword">except</span> sr.RequestError <span class="hljs-keyword">as</span> e:<restore-line-break>                print(<span class="hljs-string">f"Could not request results; <span class="hljs-subst">{e}</span>"</span>)<restore-line-break>            <span class="hljs-keyword">except</span> sr.UnknownValueError <span class="hljs-keyword">as</span> e:<restore-line-break>                <span class="hljs-keyword">pass</span><restore-line-break>            <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<restore-line-break>                print(<span class="hljs-string">f"Error: ' <span class="hljs-subst">{e}</span> ' occured!"</span>)<restore-line-break><restore-line-break>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">yes_minion</span>(<span class="hljs-params">self, my_command: str = None</span>):</span><restore-line-break>        <span class="hljs-keyword">if</span> my_command <span class="hljs-keyword">is</span> <span class="hljs-literal">None</span>:<restore-line-break>            <span class="hljs-keyword">return</span><restore-line-break><restore-line-break>        system_call = [<span class="hljs-string">'hello'</span>, <span class="hljs-string">'hallo'</span>]<restore-line-break>        <span class="hljs-keyword">if</span> my_command <span class="hljs-keyword">in</span> system_call:<restore-line-break>            sorry = <span class="hljs-string">"Yes Sir?"</span><restore-line-break>            self.SpeakText(sorry, voice_id=self.voice_id,<restore-line-break>                           driver_name=self.driver_name)<restore-line-break>            <span class="hljs-keyword">return</span><restore-line-break><restore-line-break>        shutdown = [<span class="hljs-string">'shut down'</span>, <span class="hljs-string">'shutdown'</span>]<restore-line-break>        <span class="hljs-keyword">if</span> my_command <span class="hljs-keyword">in</span> shutdown:<restore-line-break>            talk = <span class="hljs-string">"Shutting down in 3.....2.....1"</span><restore-line-break>            self.SpeakText(talk, voice_id=self.voice_id,<restore-line-break>                           driver_name=self.driver_name)<restore-line-break>            sys.exit()<restore-line-break><restore-line-break>        sorry = <span class="hljs-string">"Sorry sir, I do not understand you. Could you refrase that question?"</span><restore-line-break>        self.SpeakText(sorry, voice_id=self.voice_id,<restore-line-break>                       driver_name=self.driver_name)<restore-line-break><restore-line-break><restore-line-break><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:<restore-line-break>    <span class="hljs-comment">#call the class </span><restore-line-break>    stm = SpeakToMe()<restore-line-break><restore-line-break>    <span class="hljs-comment"># start python to listnen to you!</span><restore-line-break>    stm.listen_to_me()<restore-line-break></code></pre>
+<p>Any questions? Leave them in the comments below. Like my code? Please buy me a coffee!</p>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/ghost-503-service-unavailable-error.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Ghost 503 Service Unavailable error
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/install-python-395-on-raspberry-pi-step-by-step.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           Install Python 3.9.5 on Raspberry Pi step by step
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-10-03T22:00" class="feed__date">
+                                 October 3, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/scraping-contact-data-with-python-export-to-csv.html">
+                              Scraping contact data with Python export to csv
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-11-30T23:00" class="feed__date">
+                                 November 30, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/image-resize-python-automation-script.html">
+                              Image resize python automation script
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-12-19T23:00" class="feed__date">
+                                 December 19, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/get-colors-from-images-python-script.html">
+                              Get colors from images python script
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

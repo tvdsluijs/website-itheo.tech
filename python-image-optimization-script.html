@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Python Image Optimization Script - iTheo.Tech </title>
+        <meta name="description" content="So new assignment! Write a Python script that optimizes images for web performance without losing quality, converts them to RGB, and calculates the space saved. The script should accept an input folder, read the folder recursively, and place the optimized images in a different folder&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+
+        <link rel="canonical" href="https://itheo.tech/python-image-optimization-script.html">
+        <link rel="alternate" type="application/atom+xml" href="https://itheo.tech/feed.xml" />
+<link rel="alternate" type="application/json" href="https://itheo.tech/feed.json" />
+
+        <meta property="og:title" content="Python Image Optimization Script" /><meta property="og:image" content="https://itheo.tech/media/posts/65/491adf798a41e2ed4e9ba10ec9acda1d.jpeg"/><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="1065" /><meta property="og:site_name" content="iTheo.Tech" /><meta property="og:description" content="So new assignment! Write a Python script that optimizes images for web performance without losing quality, converts them to RGB, and calculates the space saved. The script should accept an input folder, read the folder recursively, and place the optimized images in a different folder&hellip;" /><meta property="og:url" content="https://itheo.tech/python-image-optimization-script.html" /><meta property="og:type" content="article" />
+        <link rel="stylesheet" href="https://itheo.tech/assets/css/style.css?v=6fbb1e8931a5afe843374fd67c192c86">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://itheo.tech/python-image-optimization-script.html"},"headline":"Python Image Optimization Script","datePublished":"2023-04-25T05:40","dateModified":"2024-06-01T19:42","image":{"@type":"ImageObject","url":"https://itheo.tech/media/posts/65/491adf798a41e2ed4e9ba10ec9acda1d.jpeg","height":1065,"width":1600},"description":"So new assignment! Write a Python script that optimizes images for web performance without losing quality, converts them to RGB, and calculates the space saved. The script should accept an input folder, read the folder recursively, and place the optimized images in a different folder&hellip;","author":{"@type":"Person","name":"Theo van der Sluijs","url":"https://itheo.tech/authors/theo-van-der-sluijs/"},"publisher":{"@type":"Organization","name":"Theo van der Sluijs","logo":{"@type":"ImageObject","url":"https://itheo.tech/media/website/itheo.tech-500x125-logo.png","height":125,"width":500}}}</script>
+        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript>	
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://itheo.tech/">
+            <img src="https://itheo.tech/media/website/itheo.tech-500x125-logo.png" alt="iTheo.Tech" width="500" height="125">
+      </a>
+         <div class="search">
+            <div class="search__overlay js-search-overlay">
+               <div class="search__overlay-inner">
+                   
+                  <button class="search__close js-search-close" aria-label="Close">
+                     Close
+                  </button>
+               </div>
+            </div>
+            <button class="search__btn js-search-btn" aria-label="Search">
+               <svg role="presentation" focusable="false">
+                  <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#search"/>
+               </svg>
+            </button>
+         </div>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+                  <figure class="hero__image hero__image--overlay">                      
+                     <img
+                        src="https://itheo.tech/media/posts/65/491adf798a41e2ed4e9ba10ec9acda1d.jpeg"
+                            srcset="https://itheo.tech/media/posts/65/responsive/491adf798a41e2ed4e9ba10ec9acda1d-xs.webp 300w ,https://itheo.tech/media/posts/65/responsive/491adf798a41e2ed4e9ba10ec9acda1d-sm.webp 480w ,https://itheo.tech/media/posts/65/responsive/491adf798a41e2ed4e9ba10ec9acda1d-md.webp 768w ,https://itheo.tech/media/posts/65/responsive/491adf798a41e2ed4e9ba10ec9acda1d-lg.webp 1024w ,https://itheo.tech/media/posts/65/responsive/491adf798a41e2ed4e9ba10ec9acda1d-xl.webp 1360w ,https://itheo.tech/media/posts/65/responsive/491adf798a41e2ed4e9ba10ec9acda1d-2xl.webp 1600w" sizes="(max-width: 1600px) 100vw, 1600px"
+                         loading="eager"
+                        height="1065"
+                        width="1600"
+                        alt="">
+                      
+                  </figure>
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2023-04-25T05:40">
+                              April 25, 2023
+                        </time>
+                     </div>
+                  <h1>
+                     Python Image Optimization Script
+                  </h1>
+                     <div class="post__meta post__meta--author">
+                              <img 
+                                 src="https://itheo.tech/media/website/64.png" 
+                                  loading="eager"
+                                 height="512"
+                                 width="512"
+                                 class="post__author-thumb" 
+                                 alt="Theo van der Sluijs">
+                           <a href="https://itheo.tech/authors/theo-van-der-sluijs/" class="feed__author">Theo van der Sluijs</a>
+                     </div>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <p>So new assignment!</p>
+<blockquote>
+<p>Write a Python script that optimizes images for web performance without losing quality, converts them to RGB, and calculates the space saved. The script should accept an input folder, read the folder recursively, and place the optimized images in a different folder while preserving the original folder structure. The script should also make the optimized filenames web safe.</p>
+</blockquote>
+<p>Let's try this!</p>
+<p>To optimize images for web performance without losing quality, we can use the <code>Pillow</code> library for image processing, and the <code>slugify</code> library to make the filenames web safe. Here's a script with inline comments for a brief explanation:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> os<restore-line-break><span class="hljs-keyword">import</span> sys<restore-line-break><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image, ImageFile<restore-line-break><span class="hljs-keyword">from</span> slugify <span class="hljs-keyword">import</span> slugify<restore-line-break><restore-line-break><span class="hljs-comment"># Optimize a single image and save it to the output folder</span><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">optimize_image</span>(<span class="hljs-params">image_path, output_folder</span>):</span><restore-line-break>    <span class="hljs-comment"># Set LOAD_TRUNCATED_IMAGES to True</span><restore-line-break>    ImageFile.LOAD_TRUNCATED_IMAGES = <span class="hljs-literal">True</span><restore-line-break><restore-line-break>    <span class="hljs-comment"># Open the image</span><restore-line-break>    img = Image.open(image_path)<restore-line-break><restore-line-break>    <span class="hljs-comment"># Convert the image to RGB</span><restore-line-break>    img_rgb = img.convert(<span class="hljs-string">'RGB'</span>)<restore-line-break><restore-line-break>    <span class="hljs-comment"># Save image with optimized settings</span><restore-line-break>    output_path = os.path.join(output_folder, slugify(os.path.basename(image_path)))<restore-line-break>    img_rgb.save(output_path, <span class="hljs-string">"JPEG"</span>, optimize=<span class="hljs-literal">True</span>, quality=<span class="hljs-number">85</span>)<restore-line-break><restore-line-break>    <span class="hljs-comment"># Return the original and optimized image file sizes</span><restore-line-break>    original_size = os.path.getsize(image_path)<restore-line-break>    optimized_size = os.path.getsize(output_path)<restore-line-break><restore-line-break>    <span class="hljs-keyword">return</span> original_size, optimized_size<restore-line-break><restore-line-break><span class="hljs-comment"># Recursively process the input folder, optimize images, and save them in the output folder</span><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_folder</span>(<span class="hljs-params">input_folder, output_folder</span>):</span><restore-line-break>    total_original_size = <span class="hljs-number">0</span><restore-line-break>    total_optimized_size = <span class="hljs-number">0</span><restore-line-break><restore-line-break>    <span class="hljs-keyword">for</span> root, dirs, files <span class="hljs-keyword">in</span> os.walk(input_folder):<restore-line-break>        <span class="hljs-keyword">for</span> file <span class="hljs-keyword">in</span> files:<restore-line-break>            <span class="hljs-keyword">if</span> file.lower().endswith((<span class="hljs-string">'.jpg'</span>, <span class="hljs-string">'.jpeg'</span>, <span class="hljs-string">'.png'</span>)):<restore-line-break>                input_path = os.path.join(root, file)<restore-line-break>                relative_path = os.path.relpath(root, input_folder)<restore-line-break>                output_subfolder = os.path.join(output_folder, relative_path)<restore-line-break>                os.makedirs(output_subfolder, exist_ok=<span class="hljs-literal">True</span>)<restore-line-break>                original_size, optimized_size = optimize_image(input_path, output_subfolder)<restore-line-break>                total_original_size += original_size<restore-line-break>                total_optimized_size += optimized_size<restore-line-break><restore-line-break>    <span class="hljs-keyword">return</span> total_original_size, total_optimized_size<restore-line-break><restore-line-break><span class="hljs-comment"># Format file size in a human-readable way</span><restore-line-break><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">format_size</span>(<span class="hljs-params">size</span>):</span><restore-line-break>    <span class="hljs-keyword">if</span> size < <span class="hljs-number">1024</span>:<restore-line-break>        <span class="hljs-keyword">return</span> <span class="hljs-string">f"<span class="hljs-subst">{size}</span> B"</span><restore-line-break>    <span class="hljs-keyword">elif</span> size < <span class="hljs-number">1024</span> * <span class="hljs-number">1024</span>:<restore-line-break>        <span class="hljs-keyword">return</span> <span class="hljs-string">f"<span class="hljs-subst">{size / <span class="hljs-number">1024</span>:<span class="hljs-number">.2</span>f}</span> KB"</span><restore-line-break>    <span class="hljs-keyword">else</span>:<restore-line-break>        <span class="hljs-keyword">return</span> <span class="hljs-string">f"<span class="hljs-subst">{size / (<span class="hljs-number">1024</span> * <span class="hljs-number">1024</span>):<span class="hljs-number">.2</span>f}</span> MB"</span><restore-line-break><restore-line-break><span class="hljs-comment"># Main entry point of the script</span><restore-line-break><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:<restore-line-break>    <span class="hljs-keyword">if</span> len(sys.argv) < <span class="hljs-number">3</span>:<restore-line-break>        print(<span class="hljs-string">"Usage: python optimize_images.py INPUT_FOLDER OUTPUT_FOLDER"</span>)<restore-line-break>        sys.exit(<span class="hljs-number">1</span>)<restore-line-break><restore-line-break>    input_folder = sys.argv[<span class="hljs-number">1</span>]<restore-line-break>    output_folder = sys.argv[<span class="hljs-number">2</span>]<restore-line-break><restore-line-break>    original_size, optimized_size = process_folder(input_folder, output_folder)<restore-line-break>    saved_size = original_size - optimized_size<restore-line-break><restore-line-break>    print(<span class="hljs-string">f"Image optimization complete!n"</span><restore-line-break>          <span class="hljs-string">f"Original size: <span class="hljs-subst">{format_size(original_size)}</span>n"</span><restore-line-break>          <span class="hljs-string">f"Optimized size: <span class="hljs-subst">{format_size(optimized_size)}</span>n"</span><restore-line-break>          <span class="hljs-string">f"Space saved: <span class="hljs-subst">{format_size(saved_size)}</span>"</span>)<restore-line-break></code></pre>
+<p>Here's a detailed explanation of the script:</p>
+<ol>
+<li>
+<p>Import the necessary modules: <code>os</code>, <code>sys</code>, <code>Image</code>, <code>ImageFile</code> from <code>PIL</code>, and <code>slugify</code>.</p>
+</li>
+<li>
+<p>Define the <code>optimize_image</code> function, which takes an image file path and an output folder as arguments. This function opens the image, converts it to RGB, optimizes it, and saves it to the output folder with a web-safe filename. It also returns the original and optimized image file sizes.</p>
+</li>
+<li>
+<p>Define the <code>process_folder</code> function, which takes an input folder and an output folder as arguments. This function recursively processes the input folder, optimizes images, and saves them in the output folder. It maintains the original folder structure by calculating the relative path and creating corresponding subfolders in the output folder. The function accumulates the total original and optimized image file sizes and returns them at the end.</p>
+</li>
+<li>
+<p>Define the <code>format_size</code> function, which takes a file size in bytes as an argument and returns a human-readable string representing the file size in bytes, kilobytes, or megabytes.</p>
+</li>
+<li>
+<p>Define the main entry point of the script (<code>if __name__ == "__main__":</code>). This section checks for the correct number of command-line arguments and retrieves the input folder and output folder. It calls the <code>process_folder</code> function to process the images and calculate the original size, optimized size, and space saved. Finally, it prints the results in a human-readable format.</p>
+</li>
+</ol>
+<p>To run this script, first install the required libraries using <code>pip</code>:</p>
+<pre><code class="lang-python">pip install pillow python-slugify<restore-line-break></code></pre>
+<p>Then, run the script from the command line, providing the input and output folders as arguments:</p>
+<pre><code class="lang-python">python optimize_images.py input_folder output_folder<restore-line-break></code></pre>
+<p>The script will optimize the images in the input folder, convert them to RGB, save them in the output folder with the same folder structure, and display the total original size, optimized size, and space saved.</p>
+
+
+            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           June 1, 2024
+                     </p>
+
+
+                     <div class="post__share">
+                        
+                        
+                        
+                        
+                        
+                        
+                     </div>
+
+                  <div class="post__bio bio">
+                           <img 
+                              src="https://itheo.tech/media/website/64.png" 
+                               loading="lazy"
+                              height="512"
+                              width="512" 
+                              class="bio__avatar" 
+                              alt="Theo van der Sluijs">                          
+                        <div>
+                           <h3 class="bio__name">
+                              <a href="https://itheo.tech/authors/theo-van-der-sluijs/" rel="author">Theo van der Sluijs</a>
+                           </h3>
+                        </div>
+                  </div>
+            </footer>
+      </article>
+
+            <nav class="post__nav">
+               <div class="post__nav-inner">
+                     <div class="post__nav-prev">
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-prev"/>
+                        </svg>
+
+                        <a href="https://itheo.tech/download-space-wide-screen-images-with-python.html" class="post__nav-link" rel="prev">
+                           <span>Previous</span>
+                           Download space wide screen images with Python
+                        </a>
+                     </div>
+                     <div class="post__nav-next">
+                        <a href="https://itheo.tech/installing-python-311-on-raspberry-pi.html" class="post__nav-link" rel="next">
+                           <span>Next</span>
+                           Installing Python 3.11 on Raspberry Pi
+                        </a>
+                        <svg width="1.041em" height="0.416em" aria-hidden="true">
+                           <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#arrow-next"/>
+                        </svg>
+                     </div>
+               </div>
+            </nav>
+
+            <div class="post__related related">
+               <div class="wrapper">
+                  <h2 class="h5 related__title">
+                     You should also read:
+                  </h2>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-11-30T23:00" class="feed__date">
+                                 November 30, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/image-resize-python-automation-script.html">
+                              Image resize python automation script
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-12-11T23:00" class="feed__date">
+                                 December 11, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/fake-jekyll-posts-generator-script.html">
+                              Fake Jekyll posts generator script
+                           </a>
+                        </h3>
+                     </article>
+                     <article class="related__item">
+                        <div class="feed__meta">
+                           <time datetime="2018-12-19T23:00" class="feed__date">
+                                 December 19, 2018
+                           </time>
+                        </div>
+                        <h3 class="h1">
+                           <a href="https://itheo.tech/get-colors-from-images-python-script.html">
+                              Get colors from images python script
+                           </a>
+                        </h3>
+                     </article>
+               </div>
+            </div>
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p>iTheo.Tech</p>
+        </div>
+        <button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top">
+            <svg>
+                <use xlink:href="https://itheo.tech/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+        </button>
+
+</footer>
+</div>
+
+<script defer src="https://itheo.tech/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script>
+
+<script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script>
+
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
